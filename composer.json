@@ -1,0 +1,5 @@
+{
+    "require": {
+        "aspera/xlsx-reader": "^1.1"
+    }
+}
