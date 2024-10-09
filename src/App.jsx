@@ -4,6 +4,7 @@ import { HeroImages } from './assets/heroes'
 import { ResistanceImage } from './assets/resistances'
 import ZZZ from './assets/zzz.svg';
 import NoEntry from './assets/noentry.svg';
+import Partial from './assets/partial.svg';
 
 import HanzoWallClimb from './assets/skills/hanzo_wallclimb.webp'
 import Characters from './out/character.json'
@@ -63,18 +64,18 @@ function App() {
             <CharacterSwitcher characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
           </div>
           <div className="flex flex-row gap-2 justify-end">
-            <div className="hover:cursor-pointer" onClick={() => setIsAdvanced(!isAdvanced)}>
+            <div className="hover:cursor-pointer" onClick={() => setIsAdvanced(!isAdvanced)} title={`Change to ${isAdvanced ? 'Simple Mode' : 'Advanced Mode'}`}>
               <Tag>
                 <h6 className="capitalize">{ isAdvanced ? 'Advanced Mode' : 'Simple Mode' }</h6>
               </Tag>
             </div>
-            <Tag>
+            <Tag title="Base Health">
               <div className="size-12">
                 <HealthTicker />
               </div>
               <h6 className="capitalize">{selectedCharacter.health}</h6>
             </Tag>
-            <Tag>
+            <Tag title="Base Shield">
               <div className="size-12">
                 <HealthTicker type="shield" />
               </div>
@@ -113,15 +114,15 @@ function HealthTicker({type = ''}) {
 
 function Role({roleName}) {
   return (
-    <Tag image={RoleImage[roleName]}>
+    <Tag image={RoleImage[roleName]} title={"Character Role"}>
       <h6 className="capitalize">{roleName}</h6>
     </Tag>
   )
 }
 
-function Tag({image, children}) {
+function Tag({image, title = null, children}) {
   return (
-    <div className="flex flex-col size-24 menu rounded justify-center items-center">
+    <div className="flex flex-col size-24 menu rounded justify-center items-center" title={title}>
       {
         image &&
           (
@@ -151,13 +152,13 @@ function Skill({skill, showAdvanced}) {
   }
   if(!selectedSkill) return null;
   return (
-  <div className="flex flex-row gap-2 w-100">
-    <div className="flex flex-row py-4 w-11/12 menu rounded pr-4">
-      <div className="flex flex-col justify-center items-center p-4">
-        <div className="size-12">
+  <div className="flex flex-col w-100">
+    <div className="flex flex-row py-4 w-100 menu rounded-t px-4">
+      <div className="flex flex-col w-6/12 justify-center items-center p-4">
+        <div className="w-100 flex items-center">
           <img src={HanzoWallClimb} />
         </div>
-        <h6 className="w-24 text-sm capitalize">{selectedSkill.name}</h6>
+        <h4 className="w-24 text-lg capitalize font-light">{selectedSkill.name}</h4>
       </div>
       <div className="flex round-full">
         <div className="flex flex-col justify-center items-start">
@@ -174,7 +175,7 @@ function Skill({skill, showAdvanced}) {
         </div>
       </div>
     </div>
-    <div className="flex flex-col py-4 w-1/12 menu rounded gap-8 justify-between items-center">
+    <div className="flex flex-row px-4 py-2 w-100 menu-dark rounded-b gap-8 justify-end items-end">
         {
           selectedSkill.resistances.filter((resistance) => resistance).map((resistance, key) => (<Resistance key={key} imageName={(resistance.replaceAll(' ', '_').replaceAll('\/', '_')).toLowerCase()} tooltip={resistance} />))
         }
@@ -194,18 +195,19 @@ function Resistance({imageName, tooltip}) {
       </div>
       )
     },
-    partially: {
-      extraClass: (
-        <div className="relative">
-          <img src={ResistanceImage[imageName]} title={tooltip} className="opacity-90" />
-          <img src={NoEntry} className="absolute top-0 right-0 opacity-50" title={tooltip}  width="24"/>
-        </div>
-      )
-    },
     blocked: {
       extraClass: (
         <div className="relative">
           <img src={ResistanceImage[imageName]} title={tooltip} />
+          <img src={NoEntry} className="absolute top-0 right-0 opacity-50" title={tooltip}  width="24"/>
+        </div>
+      )
+    },
+    partially: {
+      extraClass: (
+        <div className="relative">
+          <img src={ResistanceImage[imageName]} title={tooltip} className="opacity-90" />
+          <img src={Partial} className="absolute top-0 right-0 w-[10px]" title={tooltip}  width="24"/>
         </div>
       )
     },

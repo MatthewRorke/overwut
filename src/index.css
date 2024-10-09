@@ -78,6 +78,10 @@ button:focus-visible {
   background: #455468;
   @apply shadow-md;
 }
+.menu-dark {
+  background: #313b49;
+  @apply shadow-md;
+}
 
 .color-code-damage,
 .color-code-dmg-amplification {
