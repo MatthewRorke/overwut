@@ -31,7 +31,7 @@ const simpleFields = [
 
 function CharacterSwitcher({characterList, onChangeCharacter}) {
   return (
-    <select className="z-10 menu rounded text-4xl text-center capitalize mb-12 mr-4" onChange={onChangeCharacter}>
+    <select className="z-10 menu rounded text-4xl text-center capitalize mb-4 md:mb-12" onChange={onChangeCharacter}>
       {characterList.map((character) => (
         <option className="text-black bg-white capitalize text-2xl">{character}</option>
       ))}
@@ -54,13 +54,13 @@ function App() {
     setSelectedCharacter(character);
   }
   return (
-    <div className="container">
+    <div className="flex justify-center container w-screen mt-4 md:w-[768px] mx-auto">
       <div className="flex flex-row">
         <div>
-          <Character character={selectedCharacter} characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
+          <Character character={selectedCharacter} />
         </div>
-        <div className="flex flex-col gap-2 z-10">
-          <div className="flex flex-row gap-2 justify-between">
+        <div className="flex flex-col z-10 md:gap-2">
+          <div className="flex flex-col-reverse md:flex-row gap-2 justify-between">
             <div className="flex flex-col">
               <CharacterSwitcher characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
             </div>
@@ -85,7 +85,7 @@ function App() {
               <Role roleName={selectedCharacter.role} />
             </div>
           </div>
-          <div className="flex flex-row justify-between gap-2">
+          <div className="flex flex-col md:flex-row justify-between gap-2">
               <div className="flex flex-col grow">
                 <div className="menu-dark sticky top-2 rounded w-100 text-left p-4">
                   <h6 className="text-lg capitalize font-medium text-white">Jump to</h6>
@@ -102,7 +102,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 w-7/12">
+              <div className="flex flex-col gap-2 w-100 md:w-7/12">
               {
                 selectedCharacter.skills.map((skill, key) => (
                   <Skill key={key} skill={skill} showAdvanced={isAdvanced} />
@@ -156,11 +156,10 @@ function Tag({image, title = null, children}) {
   )
 }
 
-function Character({character, characterList, onChangeCharacter}) {
+function Character({character}) {
   return (
-    <div>
-      <div className={`bg-no-repeat fixed left-0 h-[100vh] w-[100vw]`} style={{backgroundImage: `url('${HeroImages[character.name.replaceAll('.', '').replaceAll(' ', '_').toLowerCase()]}')`}}>
-      </div>
+    <div className="fixed top-0 left-0 z-1">
+      <img src={HeroImages[character.name.replaceAll('.', '').replaceAll(' ', '_').toLowerCase()]} />
     </div>
   );
 }
