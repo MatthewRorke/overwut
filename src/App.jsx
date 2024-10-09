@@ -155,18 +155,15 @@ function Skill({skill}) {
 }
 
 function Resistance({imageName, tooltip}) {
-  const statusCheck = [
-    "ignores",
-    "partially",
-    "blocked"
-  ]
-  if(statusCheck.includes(tooltip)) {
-    return (
-      <div className="flex flex-col">
-        <img src={ResistanceImage[imageName]} title={tooltip}/>
-      </div>
-    )
-  }
+  // const statusCheck = [
+  //   "ignores",
+  //   "partially",
+  //   "blocked"
+  // ]
+  // statusCheck.forEach((status) => {
+
+  // })
+
   return (
     <div className="flex flex-col">
       <img src={ResistanceImage[imageName]} title={tooltip}/>
