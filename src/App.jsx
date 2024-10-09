@@ -85,12 +85,30 @@ function App() {
               <Role roleName={selectedCharacter.role} />
             </div>
           </div>
-          <div className="flex flex-col gap-2 justify-between">
-            {
-              selectedCharacter.skills.map((skill, key) => (
-                <Skill key={key} skill={skill} showAdvanced={isAdvanced} />
-              ))
-            }
+          <div className="flex flex-row justify-between gap-2">
+              <div className="flex flex-col grow">
+                <div className="menu-dark sticky top-2 rounded w-100 text-left p-4">
+                  <h6 className="text-lg capitalize font-medium text-white">Jump to</h6>
+                  <div className="list-disc mt-2">
+                    {
+                      selectedCharacter.skills.filter((result) => result).map((skill) => {
+                        return (
+                          <li>
+                            <a className="text-white font-normal hover:text-white hover:underline capitalize" href={`#${skill.replaceAll(" ", "-").toLowerCase()}`}>{skill}</a>
+                          </li>
+                        )
+                      })
+                    }
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 w-7/12">
+              {
+                selectedCharacter.skills.map((skill, key) => (
+                  <Skill key={key} skill={skill} showAdvanced={isAdvanced} />
+                ))
+              }
+              </div>
           </div>
         </div>
       </div>
@@ -155,20 +173,18 @@ function Skill({skill, showAdvanced}) {
   if(!selectedSkill) return null;
   return (
   <div className="flex flex-col w-100">
-    <div className="flex flex-row py-4 w-100 menu rounded-t px-4">
-      <div className="flex flex-col w-6/12 items-center p-2">
-        <div className="w-100 sticky top-1 items-center">
-          <img src={HanzoWallClimb} />
-          <h4 className="w-24 text-lg capitalize font-light">{selectedSkill.name}</h4>
-        </div>
+    <div className="flex flex-col gap-4 py-4 w-100 menu rounded-t px-4">
+      <div className="flex flex-row justify-center w-100 items-center" id={selectedSkill.name.replaceAll(" ", "-").toLowerCase()}>
+        <img src={HanzoWallClimb} />
+        <h4 className="w-24 text-lg capitalize font-light">{selectedSkill.name}</h4>
       </div>
       <div className="flex flex-col grow gap-1">
         {selectedSkill.meta.filter(object => showAdvanced || simpleFields.includes(object.key.toLowerCase())).map((object, key) => (
-          <div className="flex flex-row justify-start gap-2 menu-dark rounded border-1 text-sm p-2 w-100" key={key}>
-            <p className={`font-medium text-right capitalize color-code-${slugIt(object.key)}`}>
+          <div className="flex flex-row justify-between gap-2 menu-dark rounded border-1 text-sm p-2 w-100" key={key}>
+            <p className={`font-medium text-left capitalize color-code-${slugIt(object.key)}`}>
               {object.key}
-            </p>|
-            <p className={`text-left`}>
+            </p>
+            <p className={`text-right`}>
               {object.value}
             </p>
           </div>
