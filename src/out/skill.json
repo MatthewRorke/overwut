@@ -1,5 +1,28 @@
 [
     {
+        "name": "martian overboost",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "movement speed",
+                "value": "3 m\/s (falling)"
+            },
+            {
+                "key": "movement speed",
+                "value": "10.8 m\/s (double jump)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
         "name": "mediblaster",
         "type": "Hitscan",
         "trigger": "Weapon (Primary Fire)",
@@ -54,11 +77,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by defense matrix\/kinetic grasp",
-            "Blocked by Deflect\/Javelin spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -105,11 +128,42 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Blocked by defense Matrix\/Kinetic grasp",
-            "Blocked by Deflect\/Javelin spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "glide boost",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+390% (dash)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+50% (lingering)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -148,11 +202,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores Damage Boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -191,11 +245,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores Damage Boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -266,11 +320,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -309,11 +363,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -364,17 +418,17 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
     {
         "name": "nano boost",
-        "type": "Targted (Allies)",
+        "type": "Targeted (Allies)",
         "trigger": "Active, Ultimate",
         "meta": [
             {
@@ -403,11 +457,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -458,11 +512,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -525,11 +579,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -584,11 +638,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -639,11 +693,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -694,11 +748,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Partially affect by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "partially affect by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -733,11 +787,46 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "barrier field",
+        "type": "Barrier",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "1600"
+            },
+            {
+                "key": "cast time",
+                "value": "0.1 + 0.29 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "Height"
+            },
+            {
+                "key": "width",
+                "value": " 6.800 meters."
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-30%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -796,11 +885,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -831,11 +920,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "ignores barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -882,11 +971,30 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "ironcald",
+        "type": "Damage Reduction",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "dmg. reduction",
+                "value": "-20% taken"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -929,11 +1037,38 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "reconfigure",
+        "type": "Transform",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "1 second (into Assault)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.5 seconds (into Recon)"
+            },
+            {
+                "key": "duration",
+                "value": "6 seconds"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -976,11 +1111,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -1035,11 +1170,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -1094,11 +1229,30 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "adrenaline rush",
+        "type": "Healing",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "250% of wound damage dealt"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -1153,11 +1307,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -1208,11 +1362,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -1251,11 +1405,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1294,11 +1448,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1349,11 +1503,34 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "exo boots",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "max. range",
+                "value": "9.1 meters (full charge)"
+            },
+            {
+                "key": "movement speed",
+                "value": "17.44 m\/s (full charge)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -1404,11 +1581,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -1451,11 +1628,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -1490,11 +1667,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1533,11 +1710,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1572,11 +1749,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -1599,11 +1776,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1634,17 +1811,17 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
     {
         "name": "repair pack",
-        "type": "Targted (Allies)",
+        "type": "Targeted (Allies)",
         "trigger": "Active",
         "meta": [
             {
@@ -1673,11 +1850,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1728,11 +1905,42 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "barrier shield",
+        "type": "Barrier",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "250 (default)"
+            },
+            {
+                "key": "barrier health",
+                "value": "700 (during Rally)"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-30%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -1771,11 +1979,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1814,11 +2022,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -1861,11 +2069,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -1912,11 +2120,46 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "combat roll",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "dmg. reduction",
+                "value": "-50% taken"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "0.4 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "6.22 meters"
+            },
+            {
+                "key": "movement speed",
+                "value": "15 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -1967,11 +2210,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -2026,11 +2269,34 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "the best defense...",
+        "type": "Overhealth",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "overhealth",
+                "value": "40 per enemy (normal abilities)"
+            },
+            {
+                "key": "overhealth",
+                "value": "75 per enemy (Meteor Strike)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2093,11 +2359,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2132,11 +2398,46 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "power block",
+        "type": "Damage Reduction",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "dmg. reduction",
+                "value": "-80% taken"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "0.34 seconds (min)"
+            },
+            {
+                "key": "duration",
+                "value": "2.5 seconds (max)"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-35%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2211,11 +2512,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -2278,11 +2579,34 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "glide",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "movement speed",
+                "value": "4 m\/s (down)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+50% (horizontal)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2337,11 +2661,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2392,11 +2716,42 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "flight",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "0.2 seconds (min)"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds (max)"
+            },
+            {
+                "key": "movement speed",
+                "value": "28 m\/s (dash)"
+            },
+            {
+                "key": "movement speed",
+                "value": "8 m\/s (flight)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2439,11 +2794,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -2470,11 +2825,34 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "cyber-agility",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "Up to 1 second"
+            },
+            {
+                "key": "movement speed",
+                "value": "7.8 meters per second (vertical)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2529,11 +2907,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2588,11 +2966,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2619,11 +2997,46 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "deflect",
+        "type": "Deflect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "0.27 seconds min. duration"
+            },
+            {
+                "key": "duration",
+                "value": "2 seconds max. duration"
+            },
+            {
+                "key": "duration",
+                "value": "0.192 seconds recovery"
+            },
+            {
+                "key": "area of effect",
+                "value": "~1 meter width"
+            },
+            {
+                "key": "area of effect",
+                "value": "~2 meters height"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2666,11 +3079,34 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "wall climb",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "Up to 1 second"
+            },
+            {
+                "key": "movement speed",
+                "value": "7.15 m\/s (vertical)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2725,11 +3161,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2752,11 +3188,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2803,11 +3239,34 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "lunge",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "max. range",
+                "value": "7.85 meters"
+            },
+            {
+                "key": "movement speed",
+                "value": "15.66 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -2866,11 +3325,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Partially affect by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "ignores barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "partially affect by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -2921,11 +3380,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -2964,11 +3423,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3015,11 +3474,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3062,11 +3521,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -3141,11 +3600,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -3172,11 +3631,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -3239,11 +3698,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -3294,11 +3753,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -3349,11 +3808,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3404,11 +3863,34 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": " wall climb (kiriko)",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "Up to 1 second"
+            },
+            {
+                "key": "movement speed",
+                "value": "8.25 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -3467,11 +3949,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -3514,11 +3996,34 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "swift step",
+        "type": "Targeted (Ally), Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "0.25 second invulnerability"
+            },
+            {
+                "key": "max. range",
+                "value": "35 meters"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -3553,11 +4058,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -3592,11 +4097,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3643,11 +4148,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -3698,11 +4203,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -3737,17 +4242,52 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "rejuvenating dash",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "45"
+            },
+            {
+                "key": "max. range",
+                "value": "6.15 meters (along ground)"
+            },
+            {
+                "key": "max. range",
+                "value": "6.9 meters (in air)"
+            },
+            {
+                "key": "movement speed",
+                "value": "28.9 m\/s (on ground)"
+            },
+            {
+                "key": "movement speed",
+                "value": "24.25 (in air)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
     {
         "name": "life grip",
-        "type": "Targted (Allies)",
+        "type": "Targeted (Allies)",
         "trigger": "Active",
         "meta": [
             {
@@ -3760,11 +4300,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3807,11 +4347,38 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "wall ride",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "movement speed",
+                "value": "2.5 m\/s (wall leap)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+30%"
+            },
+            {
+                "key": "cooldown",
+                "value": "0.5 seconds"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -3866,11 +4433,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -3901,11 +4468,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3936,11 +4503,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -3971,11 +4538,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4002,11 +4569,30 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "berserker",
+        "type": "Overhealth",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "overhealth",
+                "value": "50% of critical damage dealt (150 max)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -4061,11 +4647,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -4112,11 +4698,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -4203,11 +4789,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4246,11 +4832,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4273,11 +4859,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4328,11 +4914,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4383,11 +4969,81 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "cryo-freeze",
+        "type": "Healing",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "62.5 per second"
+            },
+            {
+                "key": "duration",
+                "value": "0.44 seconds min. duration"
+            },
+            {
+                "key": "duration",
+                "value": "5 seconds max. duration"
+            },
+            {
+                "key": "duration",
+                "value": "0.24 seconds recovery"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "ice wall",
+        "type": "Barrier",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "health",
+                "value": "250 per pillar"
+            },
+            {
+                "key": "health",
+                "value": "5 pillars"
+            },
+            {
+                "key": "duration",
+                "value": "Up to 5 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.5 seconds recovery"
+            },
+            {
+                "key": "max. range",
+                "value": "25 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "3 meters height, 8 meters width"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -4438,11 +5094,34 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "ignores barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "eject!",
+        "type": "Movement",
+        "trigger": "Passive (Mech)",
+        "meta": [
+            {
+                "key": "health",
+                "value": "150"
+            },
+            {
+                "key": "cast time",
+                "value": "1.5 seconds"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -4489,11 +5168,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -4532,11 +5211,46 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "defense matrix",
+        "type": "Area of effect",
+        "trigger": "Weapon (Secondary Fire), (Mech)",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "0.5 seconds (min)"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds (max)"
+            },
+            {
+                "key": "max. range",
+                "value": "10 meters"
+            },
+            {
+                "key": "cooldown",
+                "value": "1 second"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -4583,11 +5297,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4642,11 +5356,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -4681,11 +5395,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4720,11 +5434,53 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "sympathetic recovery",
+        "type": "Healing",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "40% of healing dealt"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "aneglic descent",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "Until cancelled"
+            },
+            {
+                "key": "movement speed",
+                "value": "2 m\/s (down)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -4747,11 +5503,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4794,11 +5550,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -4821,11 +5577,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4852,11 +5608,74 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "valkyrie",
+        "type": "Movement",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "Chain-damage boost (30% per target)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "healing",
+                "value": "65 per second per target"
+            },
+            {
+                "key": "ammo",
+                "value": "\u221e (Blaster)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.5 seconds animation"
+            },
+            {
+                "key": "duration",
+                "value": "15 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "10 meters (chain healing)"
+            },
+            {
+                "key": "max. range",
+                "value": "+100% range (Guardian Angel, Caduceus Staff)"
+            },
+            {
+                "key": "movement speed",
+                "value": "25 m\/s (Guardian Angel)"
+            },
+            {
+                "key": "movement speed",
+                "value": "26.5 m\/s (GA crouch extension)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+63.6% (flight)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "100 m\/s (Blaster)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -4895,11 +5714,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4930,11 +5749,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -4981,11 +5800,38 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Partially affect by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "partially affect by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "fade",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "0.752 seconds + 0.048 s. recovery"
+            },
+            {
+                "key": "max. range",
+                "value": "15 meters (max)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+250%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5032,11 +5878,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -5079,11 +5925,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -5122,11 +5968,46 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "fortify",
+        "type": "Overhealth",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "overhealth",
+                "value": "100"
+            },
+            {
+                "key": "dmg. reduction",
+                "value": "-45% taken"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-10%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5177,11 +6058,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -5244,11 +6125,38 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "hover jets",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "Up to 2 seconds"
+            },
+            {
+                "key": "movement speed",
+                "value": "4.66 m\/s (vertical)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+40% (horizontal)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5311,11 +6219,69 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "jet dash",
+        "type": "Movement",
+        "trigger": "Active ",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "0.85 seconds"
+            },
+            {
+                "key": "movement speed",
+                "value": "19 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "jump jet",
+        "type": "Movement",
+        "trigger": "Active ",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "0.85 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "8.4 meters (vertical)"
+            },
+            {
+                "key": "movement speed",
+                "value": "21.1 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5358,11 +6324,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -5413,11 +6379,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -5456,11 +6422,77 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "void barrier",
+        "type": "Barrier",
+        "trigger": "Weapon (Secondary Fire), (Omnic Form)",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "1000"
+            },
+            {
+                "key": "cast time",
+                "value": "0.03 + 0.5 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "35 meters"
+            },
+            {
+                "key": "cooldown",
+                "value": "13 seconds"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "nemesis form",
+        "type": "Transform",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "armor",
+                "value": "300"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.5 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "8 seconds"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+20%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5499,11 +6531,42 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "block",
+        "type": "Damage Reduction",
+        "trigger": "Weapon (Secondary Fire), (Nemesis Form)",
+        "meta": [
+            {
+                "key": "dmg. reduction",
+                "value": "-75% taken"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.3 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.2 seconds (min)"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-50%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5558,11 +6621,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -5597,11 +6660,30 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "the reaping",
+        "type": "Healing",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "35% of damage dealt"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5656,11 +6738,77 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "wraith form",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0.4 seconds recovery"
+            },
+            {
+                "key": "duration",
+                "value": "0.4 seconds (min)"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds (max)"
+            },
+            {
+                "key": "max. range",
+                "value": "24.75 meters"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+50%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "shadow step",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "1.15 + 0.13 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.53 seconds (teleport)"
+            },
+            {
+                "key": "duration",
+                "value": "0.98 seconds (invulnerability)"
+            },
+            {
+                "key": "max. range",
+                "value": "35 meters"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5691,11 +6839,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -5766,11 +6914,46 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "take a breather",
+        "type": "Healing",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "160 per second"
+            },
+            {
+                "key": "dmg. reduction",
+                "value": "-40% taken"
+            },
+            {
+                "key": "cast time",
+                "value": "0.21 + 0.54 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.55 seconds (min)"
+            },
+            {
+                "key": "duration",
+                "value": "2.5 seconds (max)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -5821,11 +7004,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -5884,11 +7067,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -5947,11 +7130,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -6010,11 +7193,58 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "experimental barrier",
+        "type": "Barrier",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "700"
+            },
+            {
+                "key": "cast time",
+                "value": "0.03 + 0 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "Until recalled or destroyed"
+            },
+            {
+                "key": "max. range",
+                "value": "\u221e"
+            },
+            {
+                "key": "area of effect",
+                "value": "4.5 meters height"
+            },
+            {
+                "key": "area of effect",
+                "value": "5 meters width at the poles"
+            },
+            {
+                "key": "area of effect",
+                "value": "6.5 meters width at the middle"
+            },
+            {
+                "key": "projectile speed",
+                "value": "20 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -6041,11 +7271,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6108,11 +7338,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -6175,11 +7405,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6226,11 +7456,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -6261,11 +7491,42 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "power slide",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "max. range",
+                "value": "~16 meters"
+            },
+            {
+                "key": "movement speed",
+                "value": "17 m\/s (jump, vertical)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+160% (slide)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+273% (jump, horizontal)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -6308,11 +7569,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -6331,11 +7592,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -6374,11 +7635,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -6425,11 +7686,34 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "sprint",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "\u221e"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+50%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -6456,11 +7740,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6487,11 +7771,50 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "stealth",
+        "type": "Movement",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0.25 (fade out)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.375 seconds (fade in)"
+            },
+            {
+                "key": "duration",
+                "value": "\u221e"
+            },
+            {
+                "key": "area of effect",
+                "value": "4 meter radius (detection)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+60%"
+            },
+            {
+                "key": "cooldown",
+                "value": "3.5 seconds"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -6534,17 +7857,17 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
     {
         "name": "hack",
-        "type": "Targted ",
+        "type": "Targeted ",
         "trigger": "Weapon (Secondary Fire)",
         "meta": [
             {
@@ -6573,11 +7896,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6624,11 +7947,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -6655,11 +7978,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6702,11 +8025,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6745,11 +8068,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -6812,11 +8135,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -6867,11 +8190,81 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "teleporter",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "health",
+                "value": "100"
+            },
+            {
+                "key": "shields",
+                "value": "200"
+            },
+            {
+                "key": "cast time",
+                "value": "1 + 0.72 seconds (deployment)"
+            },
+            {
+                "key": "duration",
+                "value": "10 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "30 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "1.5 meter (interact range)"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "photon barrier",
+        "type": "Barrier",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "4000"
+            },
+            {
+                "key": "duration",
+                "value": "12 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "25 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "484 m \u00d7 50 m"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -6910,11 +8303,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -6973,11 +8366,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -7012,11 +8405,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7071,11 +8464,58 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "overload",
+        "type": "Overhealth",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "rate of fire",
+                "value": "Rivet Gun"
+            },
+            {
+                "key": "rivet gun",
+                "value": " 0.5 second recovery (alternate fire)"
+            },
+            {
+                "key": "forge hammer",
+                "value": " 0.6 second recovery"
+            },
+            {
+                "key": "reload time",
+                "value": "1.4 seconds (Rivet Gun)[possibly bugged]"
+            },
+            {
+                "key": "overhealth",
+                "value": "100"
+            },
+            {
+                "key": "cast time",
+                "value": "0.68 seconds animation"
+            },
+            {
+                "key": "duration",
+                "value": "5 seconds"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+30%"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -7134,11 +8574,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Partially affect by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "partially affect by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -7193,11 +8633,61 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "blink",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "duration",
+                "value": "0.1 seconds recovery for reuse"
+            },
+            {
+                "key": "max. range",
+                "value": "7.5 meters"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "recall",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "Health returned to the highest value in the past 3 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.91 seconds rewinding"
+            },
+            {
+                "key": "duration",
+                "value": "Rewinds 3 seconds back"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -7244,11 +8734,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -7283,11 +8773,42 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "explorer's resolve",
+        "type": "Shield",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "shields",
+                "value": "30 (normal abilities)"
+            },
+            {
+                "key": "shields",
+                "value": "75 (Tectonic Shock)"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds"
+            },
+            {
+                "key": "duration",
+                "value": ""
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -7350,11 +8871,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -7421,11 +8942,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7504,11 +9025,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7559,11 +9080,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7606,11 +9127,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -7681,11 +9202,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -7704,11 +9225,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -7759,11 +9280,38 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "infra-sight",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0.64 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "15 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "Map-wide"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -7802,11 +9350,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7853,11 +9401,42 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "barrier projector",
+        "type": "Barrier",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "650"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "8 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "5 meter radius"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -7900,11 +9479,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7951,11 +9530,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -7998,11 +9577,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -8053,11 +9632,34 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "roll",
+        "type": "Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0.4 seconds (transform into default form)"
+            },
+            {
+                "key": "movement speed",
+                "value": "10 m\/s"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -8092,11 +9694,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -8143,11 +9745,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -8194,11 +9796,30 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "energy",
+        "type": "Damage Reduction",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": null,
+                "value": "Damage blocked increases Particle Cannon damage."
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -8241,11 +9862,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -8316,11 +9937,38 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "partially affected by amplification matrix",
+            null
+        ]
+    },
+    {
+        "name": "particle barrier",
+        "type": "Barrier (Self)",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "barrier health",
+                "value": "225"
+            },
+            {
+                "key": "duration",
+                "value": "2.25 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "1.5 meter radius"
+            }
+        ],
+        "resistances": [
+            null,
+            null,
+            null,
+            null,
+            null,
             null
         ]
     },
@@ -8347,11 +9995,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -8394,11 +10042,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Partially blocked by Defense Matrix\/Kinetic Grasp",
-            "Partially blocked by Deflect\/Javelin Spin",
-            "Partially affect by damage boosts",
-            "Partially affected by Amplification Matrix",
+            "partially blocked by barriers",
+            "partially blocked by defense matrix\/kinetic grasp",
+            "partially blocked by deflect\/javelin spin",
+            "partially affect by damage boosts",
+            "partially affected by amplification matrix",
             null
         ]
     },
@@ -8421,11 +10069,11 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -8468,11 +10116,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -8531,17 +10179,17 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Blocked by Defense Matrix\/Kinetic Grasp",
-            "Blocked by Deflect\/Javelin Spin",
-            "Affected by damage boosts",
-            "Affected by Amplification Matrix",
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
     {
         "name": "orb of harmony",
-        "type": "Targted (Allies)",
+        "type": "Targeted (Allies)",
         "trigger": "Active",
         "meta": [
             {
@@ -8562,17 +10210,17 @@
             }
         ],
         "resistances": [
-            "Ignores barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "ignores barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
     {
         "name": "orb of discord",
-        "type": "Targted ",
+        "type": "Targeted ",
         "trigger": "Active",
         "meta": [
             {
@@ -8593,11 +10241,11 @@
             }
         ],
         "resistances": [
-            "Partially blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "partially blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     },
@@ -8624,11 +10272,11 @@
             }
         ],
         "resistances": [
-            "Blocked by barriers",
-            "Ignores Defense Matrix\/Kinetic Grasp",
-            "Ignores Deflect\/Javelin Spin",
-            "Ignores damage boosts",
-            "Ignores Amplification Matrix",
+            "blocked by barriers",
+            "ignores defense matrix\/kinetic grasp",
+            "ignores deflect\/javelin spin",
+            "ignores damage boosts",
+            "ignores amplification matrix",
             null
         ]
     }

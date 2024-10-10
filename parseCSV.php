@@ -28,7 +28,7 @@ generateResistancesJson($reader);
 function generateSkillJson($reader) {
     $reader->changeSheet(1);
     foreach ($reader as $row) {
-        if(count($row) < 9) continue;
+        if(count($row) < 2) continue;
         //print_r($row);
 
         @list($name, $type, $trigger, $meta, $resistance_1, $resistance_2, $resistance_3, $resistance_4, $resistance_5, $resistance_6) = $row;
@@ -58,12 +58,12 @@ function generateSkillJson($reader) {
             'trigger' => $row[2],
             'meta' => $new_meta,
             'resistances' => [
-                $row[4],
-                $row[5],
-                $row[6],
-                $row[7],
-                $row[8],
-@               $row[9]
+                fixString($row[4]),
+                fixString($row[5]),
+                fixString($row[6]),
+                fixString($row[7]),
+                fixString($row[8]),
+@               fixString($row[9])
             ]
         ];
     }
@@ -75,31 +75,43 @@ generateSkillJson($reader);
 function generateCharactersJson($reader) {
     $reader->changeSheet(0);
     foreach ($reader as $row) {
-        @list($name, $role, $health, $shield, $special_health, $overhealth, $image, $skill_1, $skill_2, $skill_3, $skill_4, $skill_5, $skill_6, $skill_7, $skill_8) = $row;
-
+        @list($name, $role, $health, $shield, $special_health, $overhealth, $armor, $image, $skill_1, $skill_2, $skill_3, $skill_4, $skill_5, $skill_6, $skill_7, $skill_8) = $row;
+        echo trim($name) . PHP_EOL;
         if(strtolower($row[0]) == "name") continue;        
         $ret[] = [
-            'name' => strtolower($name),
-            'role' => strtolower($role),
+            'name' => fixString($name),
+            'role' => fixString($role),
             'health' => $health,
             'shield' => $shield,
             'special_health' => $special_health,
             'overhealth' => $overhealth,
+            'armor' => $armor,
             'image' => $image,
             'skills' => [
-                strtolower($skill_1),
-                strtolower($skill_2),
-                strtolower($skill_3),
-                strtolower($skill_4),
-                strtolower($skill_5),
-                strtolower($skill_6),
-                strtolower($skill_7),
-                strtolower($skill_8),
+                fixString($skill_1),
+                fixString($skill_2),
+                fixString($skill_3),
+                fixString($skill_4),
+@               fixString($skill_5),
+@               fixString($skill_6),
+@               fixString($skill_7),
+@               fixString($skill_8),
             ]
         ];
+        echo 'Done ... ' . PHP_EOL . PHP_EOL;
     }
     generateJson($ret, 'character.json');
 
     $reader->close();
 }
 generateCharactersJson($reader);
+
+function fixString($string) {
+    if(is_null($string)) {
+        echo 'Null String found, ignoring' . PHP_EOL;
+        return null;
+    }
+    return strtolower(
+        trim($string)
+    );
+}

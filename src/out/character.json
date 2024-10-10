@@ -6,6 +6,7 @@
         "shield": "150.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "martian overboots",
@@ -14,8 +15,8 @@
             "glide boost",
             "hyper ring",
             "orbital ray",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -25,16 +26,17 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "biotic rifle",
             "sleep dart",
             "biotic grenade",
             "nano boost",
-            "",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
@@ -44,6 +46,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "the viper",
@@ -51,9 +54,9 @@
             "dynamite",
             "coach gun",
             "b.o.b",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -63,6 +66,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "exo boots",
@@ -71,8 +75,8 @@
             "regenerative burst",
             "immortality field",
             "amplification matrix",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -82,6 +86,7 @@
         "shield": "100.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "ironcald",
@@ -90,8 +95,8 @@
             "configuration: assualt",
             "a-36 tactical grenade",
             "configuration: artillery",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -101,6 +106,7 @@
         "shield": "50.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "inspire",
@@ -110,7 +116,7 @@
             "barrier shield",
             "shield bash",
             "rally",
-            ""
+            null
         ]
     },
     {
@@ -120,6 +126,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "peacekeeper",
@@ -127,9 +134,9 @@
             "combat roll",
             "flashbang",
             "deadeye",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -139,6 +146,7 @@
         "shield": "0.0",
         "special_health": "175.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "eject!",
@@ -158,6 +166,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "the best defense...",
@@ -166,8 +175,8 @@
             "power block",
             "rocket punch",
             "meteor strike",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -177,6 +186,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "glide",
@@ -185,8 +195,8 @@
             "flight",
             "focusing beam",
             "duplicate",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -196,6 +206,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "cyber-agility",
@@ -204,8 +215,8 @@
             "swift strike",
             "deflect",
             "dragonblade",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -215,6 +226,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "wall climb",
@@ -223,8 +235,8 @@
             "storm arrows",
             "lunge",
             "dragonstrike",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -234,6 +246,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "solar rifle",
@@ -241,9 +254,9 @@
             "outburst",
             "healing pylon",
             "captive sun",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -253,6 +266,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "adrenaline rush",
@@ -261,8 +275,8 @@
             "commanding shout",
             "carnage",
             "rampage",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -272,6 +286,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "total mayhem",
@@ -279,9 +294,9 @@
             "concussion mine",
             "steel trap",
             "rip tire",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -291,16 +306,17 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
-            " wall climb (kiriko)",
+            "wall climb (kiriko)",
             "healing ofuda",
             "kunai",
             "swift step",
             "protection suzu",
             "kitsune rush",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -310,6 +326,7 @@
         "shield": "50.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "healing blossom",
@@ -318,8 +335,8 @@
             "rejuvenating dash",
             "life grip",
             "tree of life",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -329,6 +346,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "wall ride",
@@ -337,8 +355,8 @@
             "crossfade",
             "amp it up",
             "sound barrier",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -348,6 +366,7 @@
         "shield": "200.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "berserker",
@@ -356,8 +375,8 @@
             "overrun",
             "cardiac overdrive",
             "cage fight",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -367,6 +386,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "endothermic blaster",
@@ -374,9 +394,9 @@
             "cryo-freeze",
             "ice wall",
             "blizzard",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -386,6 +406,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "sympathetic recovery",
@@ -395,7 +416,7 @@
             "gaurdian angel",
             "resurrect",
             "valkyrie",
-            ""
+            null
         ]
     },
     {
@@ -405,6 +426,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "biotic grasp",
@@ -412,9 +434,9 @@
             "biotic orb",
             "fade",
             "coalescence",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -424,6 +446,7 @@
         "shield": "350.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "augmented fusion driver",
@@ -431,9 +454,9 @@
             "fortify",
             "javelin spin",
             "terra surge",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -443,6 +466,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "hover jets",
@@ -451,8 +475,8 @@
             "jump jet",
             "concussive blast",
             "barrage",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -462,6 +486,7 @@
         "shield": "75.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "void accelerator",
@@ -471,7 +496,7 @@
             "block",
             "ravenous vortex",
             "annihilation",
-            ""
+            null
         ]
     },
     {
@@ -481,6 +506,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "the reaping",
@@ -488,9 +514,9 @@
             "wraith form",
             "shadow step",
             "death blossom",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -500,6 +526,7 @@
         "shield": "300.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "rocket hammer",
@@ -507,9 +534,9 @@
             "charge",
             "fire strike",
             "earthshatter",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -519,6 +546,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "scrap gun",
@@ -526,9 +554,9 @@
             "chain hook",
             "pig pen",
             "whole hog",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -538,6 +566,7 @@
         "shield": "275.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "hyperspheres",
@@ -545,9 +574,9 @@
             "kinetic grasp",
             "accretion",
             "gravitic flux",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -557,6 +586,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "railgun",
@@ -564,9 +594,9 @@
             "power slide",
             "disruptor shot",
             "overclock",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -576,6 +606,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "heavy pulse rifle",
@@ -583,9 +614,9 @@
             "sprint",
             "biotic field",
             "tactical visor",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -595,6 +626,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "stealth",
@@ -603,8 +635,8 @@
             "virus",
             "translocator",
             "emp",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -614,6 +646,7 @@
         "shield": "150.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "photon projector",
@@ -621,9 +654,9 @@
             "sentry turret",
             "teleporter",
             "photon barrier",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -633,6 +666,7 @@
         "shield": "75.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "rivet gun",
@@ -641,8 +675,8 @@
             "deploy turret",
             "overload",
             "molten core",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -652,16 +686,17 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "pulse pistols",
             "blink",
             "recall",
             "pulse bomb",
-            "",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
@@ -671,6 +706,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "clobber",
@@ -679,8 +715,8 @@
             "drill dash",
             "burrow",
             "tectonic shock",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -690,6 +726,7 @@
         "shield": "0.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "widow's kiss",
@@ -697,9 +734,9 @@
             "grappling hook",
             "venom mine",
             "infra-sight",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -709,6 +746,7 @@
         "shield": "250.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "tesla cannon",
@@ -716,9 +754,9 @@
             "barrier projector",
             "jump pack",
             "primal rage",
-            "",
-            "",
-            ""
+            null,
+            null,
+            null
         ]
     },
     {
@@ -726,18 +764,19 @@
         "role": "tank",
         "health": "450.0",
         "shield": "150.0",
-        "special_health": "175.0",
-        "overhealth": "",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "175.0",
         "image": "",
         "skills": [
-            "quad cannons ",
+            "quad cannons",
             "grappling claw",
             "roll",
             "adaptive shield",
             "piledriver",
             "minefield",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -747,6 +786,7 @@
         "shield": "125.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "energy",
@@ -755,8 +795,8 @@
             "particle barrier",
             "projected barrier",
             "graviton surge",
-            "",
-            ""
+            null,
+            null
         ]
     },
     {
@@ -766,6 +806,7 @@
         "shield": "175.0",
         "special_health": "0.0",
         "overhealth": "0.0",
+        "armor": "0.0",
         "image": "",
         "skills": [
             "snap kick",
@@ -774,8 +815,8 @@
             "orb of harmony",
             "orb of discord",
             "transcendence",
-            "",
-            ""
+            null,
+            null
         ]
     }
 ]
