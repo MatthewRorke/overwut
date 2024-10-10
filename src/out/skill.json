@@ -4727,5 +4727,3909 @@
             "Ignores Amplification Matrix",
             null
         ]
+    },
+    {
+        "name": "caduceus staff",
+        "type": "Targeted (lock-on)",
+        "trigger": "Weapon 1 (Primary Fire), Weapon 1 (Secondary Fire)",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "60 per second"
+            },
+            {
+                "key": "dmg. amplification",
+                "value": "+30% dealt"
+            },
+            {
+                "key": "max. range",
+                "value": "15 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "caduceus blaster",
+        "type": "Projectile",
+        "trigger": "Weapon 2 (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "20"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "5 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "25"
+            },
+            {
+                "key": "reload time",
+                "value": "1.4 seconds"
+            },
+            {
+                "key": "spread angle",
+                "value": "None"
+            },
+            {
+                "key": "projectile speed",
+                "value": "50 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.275 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "gaurdian angel",
+        "type": "Targeted (Allies), Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "max. range",
+                "value": "30 meters"
+            },
+            {
+                "key": "movement speed",
+                "value": "17 m\/s (regular & Jump extension)"
+            },
+            {
+                "key": "movement speed",
+                "value": "20.4 m\/s (Crouch extension)"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "resurrect",
+        "type": "Targeted (Fallen ally)",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "Revives ally at full health"
+            },
+            {
+                "key": "cast time",
+                "value": "1.75 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "5 meters"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-75%"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "biotic grasp",
+        "type": "Beam (Projectile)",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "70 per second, then lingers to heal 51 over 3 seconds"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "20 energy per second"
+            },
+            {
+                "key": "ammo",
+                "value": "156 biotic energy"
+            },
+            {
+                "key": "cast time",
+                "value": "0.08 seconds for heal"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds (remainder)"
+            },
+            {
+                "key": "max. range",
+                "value": "15 meters"
+            },
+            {
+                "key": "projectile radius",
+                "value": "None"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "biotic grasp alt fire",
+        "type": "Beam (Soft lock-on)",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "65 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "healing",
+                "value": "24 per second (self)"
+            },
+            {
+                "key": "ammo",
+                "value": "\u221e"
+            },
+            {
+                "key": "max. range",
+                "value": "20 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "biotic orb",
+        "type": "Projectile",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "50 per second, up to 200"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "healing",
+                "value": "65 per second, up to 300"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "7 seconds, or until depleted"
+            },
+            {
+                "key": "max. range",
+                "value": "4 meters (damage orb)"
+            },
+            {
+                "key": "max. range",
+                "value": "5 meters (healing orb)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "20 m\/s (default)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "5.5 m\/s (while tethered)"
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Partially affect by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "coalescence",
+        "type": "Beam",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "85 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "healing",
+                "value": "140 per second"
+            },
+            {
+                "key": "healing",
+                "value": "55 per second (self)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.5 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "8 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "30 meters"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+40%"
+            },
+            {
+                "key": "projectile radius",
+                "value": "1.375 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "augmented fusion driver",
+        "type": "Projectile",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "13"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "10 rounds\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "\u221e"
+            },
+            {
+                "key": "reload time",
+                "value": "3 seconds (cooldown after overheat)"
+            },
+            {
+                "key": "reload time",
+                "value": "2 seconds (recharge from full heat)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "100 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.225 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "energy javelin",
+        "type": "Arcing Projectile",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "80 (direct impact), 40 (wall collision)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.3 + 0.4 seconds seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.2 seconds (impact stun)"
+            },
+            {
+                "key": "duration",
+                "value": "0.3 seconds (wall stun)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "70 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.5 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "javelin spin",
+        "type": "Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "20 (first hit)"
+            },
+            {
+                "key": "damage",
+                "value": "5 (subsequent hits)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.1 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.5 seconds (min)"
+            },
+            {
+                "key": "duration",
+                "value": "1.75 seconds (max)"
+            },
+            {
+                "key": "duration",
+                "value": "2 seconds (movement speed)"
+            },
+            {
+                "key": "max. range",
+                "value": "3.5 meters"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+50% (while active)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "20% after spin"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "terra surge",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "19.5\/s (periodic damage), 72 - 500 (release)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "overhealth",
+                "value": "100 (Fortify)"
+            },
+            {
+                "key": "dmg. reduction",
+                "value": "-45% taken (Fortify)"
+            },
+            {
+                "key": "cast time",
+                "value": "None (initial cast)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.2 seconds (release)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.3 seconds (recovery)"
+            },
+            {
+                "key": "duration",
+                "value": "0.75 - 4 seconds charge time"
+            },
+            {
+                "key": "area of effect",
+                "value": "9 meters radius"
+            },
+            {
+                "key": "movement slow",
+                "value": "-30%"
+            },
+            {
+                "key": "knockback speed",
+                "value": "20 m\/s (initial pull)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "2 m\/s (knockback, min)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "11.5 m\/s (knockback, max)"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "rocket launcher",
+        "type": "Projectile, Area of effect",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "40 (direct hit)"
+            },
+            {
+                "key": "damage",
+                "value": "80 \u2013 24.6 (splash, enemy)"
+            },
+            {
+                "key": "damage",
+                "value": "20 \u2013 6.15 (splash, self)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.25 shots\/second"
+            },
+            {
+                "key": "ammo",
+                "value": "6"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.5 meter radius (explosion)"
+            },
+            {
+                "key": "spread angle",
+                "value": "None"
+            },
+            {
+                "key": "knockback speed",
+                "value": "7 m\/s (max, enemy)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "14.1 m\/s (max, self)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "40 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.35 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "concussive blast",
+        "type": "Projectile, Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "30 (direct hit only)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.16 + 0.50 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "8 meter radius"
+            },
+            {
+                "key": "knockback speed",
+                "value": "31 m\/s (direct)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "20.6 m\/s (splash)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "60 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.225 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "barrage",
+        "type": "Projectile, Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "10 (direct hit)"
+            },
+            {
+                "key": "damage",
+                "value": "30 \u2013 9 (splash, enemy)"
+            },
+            {
+                "key": "damage",
+                "value": "15 \u2013 4.5 (splash, self)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "30 rockets per second"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "duration",
+                "value": "2.5 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "2 meter explosion radius"
+            },
+            {
+                "key": "projectile speed",
+                "value": "45 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.075 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "void accelerator",
+        "type": "Porjectile",
+        "trigger": "Weapon (Primary Fire), (Omnic Form)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "25 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "100"
+            },
+            {
+                "key": "reload time",
+                "value": "1 second"
+            },
+            {
+                "key": "projectile speed",
+                "value": "80 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.15 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "pummel",
+        "type": "Melee, Projectile",
+        "trigger": "Weapon (Primary Fire), (Nemesis Form)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "65"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.67 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "\u221e"
+            },
+            {
+                "key": "max. range",
+                "value": "10.5 meters"
+            },
+            {
+                "key": "projectile speed",
+                "value": "105 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.575 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "ravenous vortex",
+        "type": "Projectile, Area of effect",
+        "trigger": "Active, (Omnic Form), (Nemesis Form)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "23.3 per second"
+            },
+            {
+                "key": "damage",
+                "value": "70 total"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.5 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "4 meter radius"
+            },
+            {
+                "key": "area of effect",
+                "value": "~8 meter height"
+            },
+            {
+                "key": "movement slow",
+                "value": "-40%"
+            },
+            {
+                "key": "projectile speed",
+                "value": "30 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "None"
+            },
+            {
+                "key": "cooldown",
+                "value": "11 seconds"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "annihilation",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "30 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.5 seconds (Omnic form)"
+            },
+            {
+                "key": "cast time",
+                "value": "None (Nemesis form)"
+            },
+            {
+                "key": "duration",
+                "value": "3 - 20 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "13 meter radius"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "hellfire shotgun",
+        "type": "Shotgun (Hitscan)",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5.4 \u2013 1.62 per pellet"
+            },
+            {
+                "key": "damage",
+                "value": "108 \u2013 36 per shot"
+            },
+            {
+                "key": "falloff range",
+                "value": "10 \u2013 20 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "0.496 seconds recovery"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "20"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "1"
+            },
+            {
+                "key": "ammo",
+                "value": "8"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "6"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "death blossom",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "185 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "8 meter radius"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-50%"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "scrap gun",
+        "type": "Shotgun (Projectile)",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "6.25 \u2013 1.88 (per pellet)"
+            },
+            {
+                "key": "damage",
+                "value": "15 \u2013 4.5 (per shrapnel)"
+            },
+            {
+                "key": "damage",
+                "value": "160 \u2013 48 (per shot)"
+            },
+            {
+                "key": "falloff range",
+                "value": "30 \u2013 50 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x1.5)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.25 shots\/s"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "16 (pellets)"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "4 (shrapnels)"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "1"
+            },
+            {
+                "key": "ammo",
+                "value": "6"
+            },
+            {
+                "key": "reload time",
+                "value": "1.75 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "20.1 degrees"
+            },
+            {
+                "key": "projectile speed",
+                "value": "80 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters (pellets)"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.15 meters (shrapnels)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "chain hook",
+        "type": "Projectile",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.1 + 0.2 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.5 seconds (min)"
+            },
+            {
+                "key": "max. range",
+                "value": "20 meters"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-50%"
+            },
+            {
+                "key": "knockback speed",
+                "value": "40 m\/s"
+            },
+            {
+                "key": "projectile speed",
+                "value": "62 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.5 meter radius (vs enemy)"
+            },
+            {
+                "key": "projectile radius",
+                "value": "None (vs wall or barrier)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "pig pen",
+        "type": "Arcing Projectile, Area of effect",
+        "trigger": "Active ",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "60 (initial)"
+            },
+            {
+                "key": "damage",
+                "value": "45\/s (periodic)"
+            },
+            {
+                "key": "damage",
+                "value": "195 (total)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "health",
+                "value": "100"
+            },
+            {
+                "key": "cast time",
+                "value": "0.14 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.8 seconds (arming delay)"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds (slow)"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.5 meter radius (trigger)"
+            },
+            {
+                "key": "area of effect",
+                "value": "4 meter radius (slow area)"
+            },
+            {
+                "key": "movement slow",
+                "value": "-40%"
+            },
+            {
+                "key": "projectile radius",
+                "value": "None"
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "whole hog",
+        "type": "Shotgun (Hitscan)",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "6 \u2013 1.8"
+            },
+            {
+                "key": "falloff range",
+                "value": "30 \u2013 40 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "8 shots\/s"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "16 per shot"
+            },
+            {
+                "key": "cast time",
+                "value": "0.5 + 1 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "7.5 seconds"
+            },
+            {
+                "key": "spread angle",
+                "value": "~40 degrees (horizontal)"
+            },
+            {
+                "key": "spread angle",
+                "value": "~3 degrees (vertical)"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-25%"
+            },
+            {
+                "key": "knockback speed",
+                "value": "16 m\/s (knockback)"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "hyperspheres",
+        "type": "Arcing Projectile, Area of effect",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "15 (direct hit)"
+            },
+            {
+                "key": "damage",
+                "value": "40 \u2013 12 (splash, enemy)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "0.67 shots\/s"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "2"
+            },
+            {
+                "key": "ammo",
+                "value": "\u221e"
+            },
+            {
+                "key": "max. range",
+                "value": "22 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "3 meter implosion radius"
+            },
+            {
+                "key": "knockback speed",
+                "value": "1.1 m\/s (enemy)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "0.7 m\/s (self)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "48 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.35 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "kinetic grasp",
+        "type": "Area of effect, Overhealth",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "overhealth",
+                "value": "60% of damage absorbed (400 max)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.05 + 0.5 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "2 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "3 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "accretion",
+        "type": "Arcing Projectile, Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "80 (direct)"
+            },
+            {
+                "key": "damage",
+                "value": "40 \u2013 12 (splash, enemy)"
+            },
+            {
+                "key": "damage",
+                "value": "20 \u2013 6 (splash, self)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.64 + 0 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "1.2 seconds (knockdown)"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.5 meter explosion radius"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-75%"
+            },
+            {
+                "key": "knockback speed",
+                "value": "10.9 m\/s (enemy, direct)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "4.3 m\/s (enemy, splash)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "3.6 m\/s (self, splash)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "37 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.9 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "gravitic flux",
+        "type": "Area of effect, Movement",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "50 (lift)"
+            },
+            {
+                "key": "damage",
+                "value": "50% max HP (slam)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.6 seconds (activation)"
+            },
+            {
+                "key": "cast time",
+                "value": "1.0 + 0 seconds (lift)"
+            },
+            {
+                "key": "duration",
+                "value": "5 seconds (targeting)"
+            },
+            {
+                "key": "duration",
+                "value": "1 second (activation delay)"
+            },
+            {
+                "key": "duration",
+                "value": "2.3 seconds (suspension)"
+            },
+            {
+                "key": "duration",
+                "value": "0.6 seconds (high gravity after slam)"
+            },
+            {
+                "key": "max. range",
+                "value": "35 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "8 meters radius (horizontal)"
+            },
+            {
+                "key": "area of effect",
+                "value": "~8-10 meters (vertical)"
+            },
+            {
+                "key": "movement speed",
+                "value": "7.15 m\/s"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "railgun",
+        "type": "Projectile",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "9"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "16 shots\/s"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "1"
+            },
+            {
+                "key": "ammo",
+                "value": "45"
+            },
+            {
+                "key": "reload time",
+                "value": "1.2 seconds"
+            },
+            {
+                "key": "spread angle",
+                "value": "1.6 degrees"
+            },
+            {
+                "key": "projectile speed",
+                "value": "160 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.175 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "railgun alt fire",
+        "type": "Hitscan",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "100 \u2013 1"
+            },
+            {
+                "key": "falloff range",
+                "value": "40 \u2013 60 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x1.5)"
+            },
+            {
+                "key": "cast time",
+                "value": "~0.65 seconds recovery [verify]"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.08 - 0.15 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "disruptor shot",
+        "type": "Projectile, Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "60 per second"
+            },
+            {
+                "key": "damage",
+                "value": "210 total"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "30 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "4 meters"
+            },
+            {
+                "key": "projectile speed",
+                "value": "30 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.2 meters"
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "overclock",
+        "type": "Hitscan",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0 + 0.74 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "8 seconds"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "heavy pulse rifle",
+        "type": "Hitscan",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "19 - 5.7"
+            },
+            {
+                "key": "falloff range",
+                "value": "30 - 50 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "9 rounds per second"
+            },
+            {
+                "key": "ammo",
+                "value": "30"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "helix rockets",
+        "type": "Projectile, Area of effect",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "40 (direct hit bonus)"
+            },
+            {
+                "key": "damage",
+                "value": "80 \u2013 40 (splash, enemy)"
+            },
+            {
+                "key": "damage",
+                "value": "40 \u2013 20 (splash, self)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "duration",
+                "value": "0.5 seconds recovery for primary"
+            },
+            {
+                "key": "area of effect",
+                "value": "3 meter radius"
+            },
+            {
+                "key": "knockback speed",
+                "value": "7.2 m\/s (max)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "50 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.35 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "biotic field",
+        "type": "Healing, Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "40 per second"
+            },
+            {
+                "key": "cast time",
+                "value": "0.54 seconds (cannot be canceled by enemy)"
+            },
+            {
+                "key": "duration",
+                "value": "5 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "4.5 meter radius"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "tactical visor",
+        "type": "Hitscan (Target lock-on)",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "reload time",
+                "value": "0.65 seconds"
+            },
+            {
+                "key": "cast time",
+                "value": "1.2 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "6 seconds"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "machine pistol",
+        "type": "Histcan",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "8 - 2.4"
+            },
+            {
+                "key": "falloff range",
+                "value": "15 - 35 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "20 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "60"
+            },
+            {
+                "key": "reload time",
+                "value": "1.2 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "0 - 2.16 degrees"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "hack",
+        "type": "Targted ",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0.65 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "8 seconds (reveal, heroes)"
+            },
+            {
+                "key": "duration",
+                "value": "1.5 seconds (ability disable, heroes)"
+            },
+            {
+                "key": "duration",
+                "value": "45 seconds (health packs)"
+            },
+            {
+                "key": "duration",
+                "value": "10 seconds (disable, objects)"
+            },
+            {
+                "key": "max. range",
+                "value": "15 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "virus",
+        "type": "Projectile",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "35 (impact, normal)"
+            },
+            {
+                "key": "damage",
+                "value": "70 (impact, hacked)"
+            },
+            {
+                "key": "damage",
+                "value": "75 (DoT)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.06 + 0.38 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds (normal)"
+            },
+            {
+                "key": "duration",
+                "value": "2 seconds (hacked)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "51 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.5 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "translocator",
+        "type": "Arcing Projectile, Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "cast time",
+                "value": "0 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.25 seconds (teleport delay)"
+            },
+            {
+                "key": "duration",
+                "value": "0.4 seconds (invulnerability)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "72 m\/s"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "emp",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "25% of current health"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.3 + 0.34 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "8 seconds (reveal, heroes)"
+            },
+            {
+                "key": "duration",
+                "value": "3 seconds (ability disable, heroes)"
+            },
+            {
+                "key": "duration",
+                "value": "45 seconds (health packs)"
+            },
+            {
+                "key": "duration",
+                "value": "10 seconds (disable, objects)"
+            },
+            {
+                "key": "area of effect",
+                "value": "15 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "photon projector",
+        "type": "Beam",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "60\/120\/180 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "10 per second"
+            },
+            {
+                "key": "ammo",
+                "value": "100"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "max. range",
+                "value": "12 meters"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.25 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "photon projector alt fire",
+        "type": "Projectile, Area of effect",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5 - 50 (direct hit)"
+            },
+            {
+                "key": "damage",
+                "value": "5 - 50 (splash, enemy)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "0.1 seconds recovery for reuse"
+            },
+            {
+                "key": "rate of fire",
+                "value": "0.25 s. recovery for use primary"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "10 (max charge)"
+            },
+            {
+                "key": "ammo",
+                "value": "100"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "cast time",
+                "value": "0.16 seconds (to min charge)"
+            },
+            {
+                "key": "cast time",
+                "value": "1 second (to full charge)"
+            },
+            {
+                "key": "area of effect",
+                "value": "Up to 2 meters radius (explosion)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "50 meters per second"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.115 - 0.575 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "sentry turret",
+        "type": "Projectile (Before deployment), Beam (Turret beam)",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "30 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "health",
+                "value": "40"
+            },
+            {
+                "key": "cast time",
+                "value": "0.22 seconds for throw + 0.28 s. recovery for shoot"
+            },
+            {
+                "key": "cast time",
+                "value": "~1 second (deployment)"
+            },
+            {
+                "key": "duration",
+                "value": "Until destroyed or replaced"
+            },
+            {
+                "key": "max. range",
+                "value": "10 meters (turret beam)"
+            },
+            {
+                "key": "movement slow",
+                "value": "\u221215% per turret"
+            },
+            {
+                "key": "projectile speed",
+                "value": "20 meters per second"
+            },
+            {
+                "key": "projectile speed",
+                "value": ""
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "rivet gun",
+        "type": "Arcing Projectile",
+        "trigger": "Weapon 1 (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "70"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.96 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "18"
+            },
+            {
+                "key": "reload time",
+                "value": "2 seconds"
+            },
+            {
+                "key": "projectile speed",
+                "value": "70 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.18 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "rivet gun alt fire",
+        "type": "Shotgun (Porjectile)",
+        "trigger": "Weapon 1 (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "12.5 - 3.75 per pellet"
+            },
+            {
+                "key": "damage",
+                "value": "125 - 37.5 per shot"
+            },
+            {
+                "key": "falloff range",
+                "value": "10 \u2013 20 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.43 shots\/s"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "10"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "2"
+            },
+            {
+                "key": "ammo",
+                "value": "18"
+            },
+            {
+                "key": "reload time",
+                "value": "2 seconds"
+            },
+            {
+                "key": "spread angle",
+                "value": "4.5 degrees"
+            },
+            {
+                "key": "projectile speed",
+                "value": "120 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "forge hammer",
+        "type": "Melee",
+        "trigger": "Weapon 2 (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "55"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "healing",
+                "value": "50 (to Torbj\u00f6rn's turret)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 swing per ~0.7 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.192 seconds (hitbox active)"
+            },
+            {
+                "key": "max. range",
+                "value": "2.5 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "deploy turret",
+        "type": "Arcing Projectile (Deploy), Hitscan (Turret fire)",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "13"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "4 shots\/s"
+            },
+            {
+                "key": "health",
+                "value": "225"
+            },
+            {
+                "key": "cast time",
+                "value": "0.51 second recovery"
+            },
+            {
+                "key": "cast time",
+                "value": "3 seconds (deploy time)"
+            },
+            {
+                "key": "duration",
+                "value": "Until destroyed or replaced"
+            },
+            {
+                "key": "max. range",
+                "value": "15 meters (deploying turret)"
+            },
+            {
+                "key": "max. range",
+                "value": "40 meters (attack range)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "17 meters per second"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.35 meters (deploying turret)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "molten core",
+        "type": "Arcing Projectile, Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "25 (impact)"
+            },
+            {
+                "key": "damage",
+                "value": "160 per second, +90 against armor (pools)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 ammo per 0.144 (if holding primary)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 ammo per 0.016 (manual rapid fire)"
+            },
+            {
+                "key": "ammo",
+                "value": "10"
+            },
+            {
+                "key": "cast time",
+                "value": "0.592 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "Up to 5.5 seconds (claw)"
+            },
+            {
+                "key": "duration",
+                "value": "10 seconds (pools)"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.5 meter interact radius"
+            },
+            {
+                "key": "projectile speed",
+                "value": "40 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.205 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Partially affect by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "pulse pistols",
+        "type": "Histcan",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5.5 - 1.65 (per bullet)"
+            },
+            {
+                "key": "damage",
+                "value": "11 - 3.3 (per shot)"
+            },
+            {
+                "key": "falloff range",
+                "value": "10 - 20 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "20 shots\/s"
+            },
+            {
+                "key": "bullets per shot",
+                "value": "2"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "2"
+            },
+            {
+                "key": "ammo",
+                "value": "40"
+            },
+            {
+                "key": "reload time",
+                "value": "1 second"
+            },
+            {
+                "key": "spread angle",
+                "value": "4.14 degrees (max)"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "pulse bomb",
+        "type": "Arcing Projectile, Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5 (stick)"
+            },
+            {
+                "key": "damage",
+                "value": "350 - 70 (explosion, enemy)"
+            },
+            {
+                "key": "damage",
+                "value": "175 - 35 (explosion, self)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.144 seconds for throw + 0.192 seconds recovery"
+            },
+            {
+                "key": "duration",
+                "value": "1 second after stick"
+            },
+            {
+                "key": "area of effect",
+                "value": "4 meter explosion radius"
+            },
+            {
+                "key": "projectile speed",
+                "value": "15 meters per second"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.25 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "clobber",
+        "type": "Melee",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "30 (impact)"
+            },
+            {
+                "key": "damage",
+                "value": "40 (over time)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "0.7 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "3 meters"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "smart excavator",
+        "type": "Projectile, Area of effect",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "35 (direct hit bonus)"
+            },
+            {
+                "key": "damage",
+                "value": "40 - 12 (explosion)"
+            },
+            {
+                "key": "falloff range",
+                "value": "1 - 2.75 meters (explosion)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.43 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "8"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "16 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.75 meter explosion radius"
+            },
+            {
+                "key": "knockback speed",
+                "value": "1.5 m\/s (direct hit)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "1.1 m\/s (min)"
+            },
+            {
+                "key": "projectile speed",
+                "value": "50 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.35 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "drill dash",
+        "type": "Melee, Movement",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "30 (first hit)"
+            },
+            {
+                "key": "damage",
+                "value": "60 over 0.4 seconds (subsequent hits)"
+            },
+            {
+                "key": "damage",
+                "value": "5 (during Burrow)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.3 seconds (unburrowed)"
+            },
+            {
+                "key": "cast time",
+                "value": "None (burrowed)"
+            },
+            {
+                "key": "duration",
+                "value": "0.4 seconds (unburrowed)"
+            },
+            {
+                "key": "duration",
+                "value": "0.9 seconds (burrowed)"
+            },
+            {
+                "key": "max. range",
+                "value": "10 meters"
+            },
+            {
+                "key": "movement speed",
+                "value": "20 m\/s (self, max)"
+            },
+            {
+                "key": "movement speed",
+                "value": "12 m\/s (self, upwards max)"
+            },
+            {
+                "key": "movement speed",
+                "value": "16 m\/s (self, during Burrow)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "14.5 m\/s (regular)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "13.45 m\/s (during Burrow)"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "burrow",
+        "type": "Movement, Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "110 - 75 (max charge)"
+            },
+            {
+                "key": "damage",
+                "value": "55 - 37.5 (min charge)"
+            },
+            {
+                "key": "falloff range",
+                "value": "2.5 - 7.5 meters (max charge)"
+            },
+            {
+                "key": "falloff range",
+                "value": "1.4 - 4 meters (min charge)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0.7 + 0 seconds (burrowing)"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.6 seconds (emerging)"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds (burrowed)"
+            },
+            {
+                "key": "duration",
+                "value": "0.2 seconds (emerging, min charge)"
+            },
+            {
+                "key": "duration",
+                "value": "0.65 seconds (emerging, max charge)"
+            },
+            {
+                "key": "duration",
+                "value": "1.3 seconds (emerging, max delay))"
+            },
+            {
+                "key": "movement speed",
+                "value": "14 m\/s (emerging, max charge)"
+            },
+            {
+                "key": "movement speed",
+                "value": "7 m\/s (emerging, min charge)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+40% (burrowed)"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-25% (casting)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "7.1 m\/s (falloff start)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "5.6 m\/s (falloff end)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "tectonic shock",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "130"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1.11 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "4"
+            },
+            {
+                "key": "cast time",
+                "value": "0.8 + 0.3 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "7 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "24.65 meters radius"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.5m height"
+            },
+            {
+                "key": "spread angle",
+                "value": "12 degrees"
+            },
+            {
+                "key": "knockback speed",
+                "value": "5 m\/s (vertical only)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "widow's kiss",
+        "type": "Hitscan",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "13 - 3.9"
+            },
+            {
+                "key": "falloff range",
+                "value": "20 - 40 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "10 shots\/s"
+            },
+            {
+                "key": "ammo",
+                "value": "35"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "0 - 3 degrees"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "widow's kiss (ads)",
+        "type": "Hitscan",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "12 - 6 (at 0% power)"
+            },
+            {
+                "key": "damage",
+                "value": "120 - 60 (at 100% power)"
+            },
+            {
+                "key": "falloff range",
+                "value": "50 - 70 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2.5)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "Up to 1 seconds to charge"
+            },
+            {
+                "key": "rate of fire",
+                "value": "0.5 second recovery before it starts charging again"
+            },
+            {
+                "key": "rate of fire",
+                "value": "recovery stops while zoom in"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "5 per shot"
+            },
+            {
+                "key": "ammo",
+                "value": "35"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "cast time",
+                "value": "0.9 seconds charging"
+            },
+            {
+                "key": "cast time",
+                "value": "0.32 seconds zoom in\/out"
+            },
+            {
+                "key": "spread angle",
+                "value": "None"
+            },
+            {
+                "key": "m. speed penalty",
+                "value": "-65%"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "grappling hook",
+        "type": "Projectile, Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "max. range",
+                "value": "20 meters"
+            },
+            {
+                "key": "movement speed",
+                "value": "20 m\/s"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "venom mine",
+        "type": "Arcing Projectile",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "15 per second"
+            },
+            {
+                "key": "damage",
+                "value": "75 total"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "health",
+                "value": "1"
+            },
+            {
+                "key": "cast time",
+                "value": "0.19 s. for throw + 0.78 s. recovery"
+            },
+            {
+                "key": "duration",
+                "value": "Until replaced or destroyed (mine)"
+            },
+            {
+                "key": "duration",
+                "value": "5 seconds (poison)"
+            },
+            {
+                "key": "area of effect",
+                "value": "3 meter interact radius"
+            },
+            {
+                "key": "projectile speed",
+                "value": "20 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.2 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "tesla cannon",
+        "type": "Beam (Multi-Target)",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "70 per second"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "20 per second"
+            },
+            {
+                "key": "ammo",
+                "value": "100"
+            },
+            {
+                "key": "reload time",
+                "value": "1.7 seconds animation"
+            },
+            {
+                "key": "max. range",
+                "value": "8 meters"
+            },
+            {
+                "key": "spread angle",
+                "value": "45 degrees"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "tesla cannon alt fire",
+        "type": "Histscan",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "15 (min charge)"
+            },
+            {
+                "key": "damage",
+                "value": "50 (max charge)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "4 - 12"
+            },
+            {
+                "key": "cast time",
+                "value": "0.3 seconds (to min charge)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.85 second (to full charge)"
+            },
+            {
+                "key": "cast time",
+                "value": "0.75 recovery"
+            },
+            {
+                "key": "max. range",
+                "value": "40 meters"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.33 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "jump pack",
+        "type": "Area of effect, Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "50 \u2013 1"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "None"
+            },
+            {
+                "key": "area of effect",
+                "value": "5 meters radius (max)"
+            },
+            {
+                "key": "area of effect",
+                "value": "1.3 meter radius (falloff start)"
+            },
+            {
+                "key": "movement speed",
+                "value": "30 m\/s"
+            },
+            {
+                "key": "knockback speed",
+                "value": "10.1 m\/s (landing)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "7.2 (mid-leap)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "primal rage",
+        "type": "Melee",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "50 (melee)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 swing per 0.656 seconds"
+            },
+            {
+                "key": "health",
+                "value": "700 max health, fully restore HP"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.7 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "10 seconds (transformation)"
+            },
+            {
+                "key": "max. range",
+                "value": "4 meters (melee)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+30%"
+            },
+            {
+                "key": "knockback speed",
+                "value": "25.7 m\/s (melee)"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "quad cannons ",
+        "type": "Histcan",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5 \u2013 1.5 per shot"
+            },
+            {
+                "key": "falloff range",
+                "value": "15 \u2013 25 meters"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "25 shots per second"
+            },
+            {
+                "key": "ammo",
+                "value": "80"
+            },
+            {
+                "key": "reload time",
+                "value": "1.6 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "~2 degrees"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.05 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "grappling claw",
+        "type": "Melee, Movement",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "60 (high speed)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "duration",
+                "value": "6 seconds (max. grapple time)"
+            },
+            {
+                "key": "duration",
+                "value": "1.5 seconds (fireball)"
+            },
+            {
+                "key": "max. range",
+                "value": "23 meters (max)"
+            },
+            {
+                "key": "max. range",
+                "value": "6 meters (retracted)"
+            },
+            {
+                "key": "movement speed",
+                "value": "9 m\/s (retracting)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+100% (max, grappling)"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+80% (max, released)"
+            },
+            {
+                "key": "knockback speed",
+                "value": "22 m\/s"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "adaptive shield",
+        "type": "Area of effect",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "overhealth",
+                "value": "100 base + 100 per enemy (self)"
+            },
+            {
+                "key": "overhealth",
+                "value": "-50 per ally (max transfer, self)"
+            },
+            {
+                "key": "overhealth",
+                "value": "+75 (max transfer, allies)"
+            },
+            {
+                "key": "duration",
+                "value": "7 seconds (self)"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds (allies)"
+            },
+            {
+                "key": "area of effect",
+                "value": "13 meter radius"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "piledriver",
+        "type": "Area of effect, Movement",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "100 - 20"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "1 second"
+            },
+            {
+                "key": "duration",
+                "value": "0.75 seconds (enemy air lock)"
+            },
+            {
+                "key": "duration",
+                "value": "0.3 seconds (recovery for form change)"
+            },
+            {
+                "key": "duration",
+                "value": "0.2 seconds (recovery for ult)"
+            },
+            {
+                "key": "area of effect",
+                "value": "8 meter radius"
+            },
+            {
+                "key": "movement speed",
+                "value": "5 m\/s (charging)"
+            },
+            {
+                "key": "movement speed",
+                "value": "98 m\/s (downwards)"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "minefield",
+        "type": "Arcing Projectiles",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "165"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "health",
+                "value": "60"
+            },
+            {
+                "key": "cast time",
+                "value": "0.1 + 0.3 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "20 seconds (on ground)"
+            },
+            {
+                "key": "duration",
+                "value": "1.25 seconds (arming time)"
+            },
+            {
+                "key": "area of effect",
+                "value": "1.5 meter interact radius"
+            },
+            {
+                "key": "knockback speed",
+                "value": "10 m\/s"
+            },
+            {
+                "key": "projectile speed",
+                "value": "12 m\/s"
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "patricle cannon",
+        "type": "Beam",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "95 per second (at 0%)"
+            },
+            {
+                "key": "damage",
+                "value": "190 per second (100% Energy)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "20 ticks per second"
+            },
+            {
+                "key": "ammo",
+                "value": "100"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "max. range",
+                "value": "15 meters"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.2 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "particle cannon alt fire",
+        "type": "Arcing Projectile, Area of effect",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "55 \u2013 11 (enemy, 0% Energy)"
+            },
+            {
+                "key": "damage",
+                "value": "110 \u2013 22 (enemy, 100% Energy)"
+            },
+            {
+                "key": "damage",
+                "value": "27.5 \u2013 5.5 (self, 0% Energy)"
+            },
+            {
+                "key": "damage",
+                "value": "55 \u2013 11 (self, 100% Energy)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 shot\/s"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "25"
+            },
+            {
+                "key": "ammo",
+                "value": "100"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds"
+            },
+            {
+                "key": "cast time",
+                "value": "0.01 seconds"
+            },
+            {
+                "key": "cast time",
+                "value": "0.4 seconds recovery for primary"
+            },
+            {
+                "key": "area of effect",
+                "value": "2.5 meter radius"
+            },
+            {
+                "key": "knockback speed",
+                "value": "5 m\/s"
+            },
+            {
+                "key": "projectile speed",
+                "value": "25 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.35 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "projected barrier",
+        "type": "Barrier (Targeted allies)",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "health",
+                "value": "225"
+            },
+            {
+                "key": "duration",
+                "value": "2.25 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "30 meters"
+            },
+            {
+                "key": "area of effect",
+                "value": "1.5 meter radius"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "graviton surge",
+        "type": "Arcing Projectile (Initial cast), Area of effect (Ability Start)",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "5 (impact)"
+            },
+            {
+                "key": "damage",
+                "value": "5 per second (over time)"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "cast time",
+                "value": "0 + 0.4 seconds"
+            },
+            {
+                "key": "duration",
+                "value": "4 seconds"
+            },
+            {
+                "key": "area of effect",
+                "value": "7 meter radius"
+            },
+            {
+                "key": "projectile speed",
+                "value": "25 meters per second"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.2 meters"
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Partially blocked by Defense Matrix\/Kinetic Grasp",
+            "Partially blocked by Deflect\/Javelin Spin",
+            "Partially affect by damage boosts",
+            "Partially affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "snap kick",
+        "type": "Melee",
+        "trigger": "Passive",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "60"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2715"
+            },
+            {
+                "key": "knockback speed",
+                "value": "15.8 m\/s (max)"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "orb of destruction",
+        "type": "Projectile",
+        "trigger": "Weapon (Primary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "50"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 shot every 0.4 second"
+            },
+            {
+                "key": "ammo",
+                "value": "25"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "None"
+            },
+            {
+                "key": "projectile speed",
+                "value": "90 meters per second"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.225 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "orb of destruction alt fire",
+        "type": "Projectile",
+        "trigger": "Weapon (Secondary Fire)",
+        "meta": [
+            {
+                "key": "damage",
+                "value": "50 per orb"
+            },
+            {
+                "key": "damage",
+                "value": "250 per volley"
+            },
+            {
+                "key": "headshot",
+                "value": "\u2713 (x2)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 orb per 0.524 seconds (charging)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "1 shot per 0.144 seconds (firing)"
+            },
+            {
+                "key": "rate of fire",
+                "value": "0.6 seconds recovery"
+            },
+            {
+                "key": "ammo per shot",
+                "value": "Up to 5 per volley"
+            },
+            {
+                "key": "ammo",
+                "value": "25"
+            },
+            {
+                "key": "reload time",
+                "value": "1.5 seconds animation"
+            },
+            {
+                "key": "spread angle",
+                "value": "None"
+            },
+            {
+                "key": "projectile speed",
+                "value": "90 m\/s"
+            },
+            {
+                "key": "projectile radius",
+                "value": "0.225 meters"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Blocked by Defense Matrix\/Kinetic Grasp",
+            "Blocked by Deflect\/Javelin Spin",
+            "Affected by damage boosts",
+            "Affected by Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "orb of harmony",
+        "type": "Targted (Allies)",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "30 health per second"
+            },
+            {
+                "key": "duration",
+                "value": "5 seconds (if out of sight)"
+            },
+            {
+                "key": "max. range",
+                "value": "40 meters"
+            },
+            {
+                "key": "projectile speed",
+                "value": "90 m\/s"
+            }
+        ],
+        "resistances": [
+            "Ignores barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "orb of discord",
+        "type": "Targted ",
+        "trigger": "Active",
+        "meta": [
+            {
+                "key": "dmg. amplification",
+                "value": "+25% taken"
+            },
+            {
+                "key": "duration",
+                "value": "1.5 seconds (if out of sight)"
+            },
+            {
+                "key": "max. range",
+                "value": "40 meters"
+            },
+            {
+                "key": "projectile speed",
+                "value": "90 m\/s"
+            }
+        ],
+        "resistances": [
+            "Partially blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
+    },
+    {
+        "name": "transcendence",
+        "type": "Area of effect",
+        "trigger": "Active, Ultimate",
+        "meta": [
+            {
+                "key": "healing",
+                "value": "300 health per second"
+            },
+            {
+                "key": "duration",
+                "value": "6 seconds"
+            },
+            {
+                "key": "max. range",
+                "value": "10.5 meters radius"
+            },
+            {
+                "key": "m. speed buff",
+                "value": "+100%"
+            }
+        ],
+        "resistances": [
+            "Blocked by barriers",
+            "Ignores Defense Matrix\/Kinetic Grasp",
+            "Ignores Deflect\/Javelin Spin",
+            "Ignores damage boosts",
+            "Ignores Amplification Matrix",
+            null
+        ]
     }
 ]
