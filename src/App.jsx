@@ -31,7 +31,7 @@ const simpleFields = [
 
 function CharacterSwitcher({characterList, onChangeCharacter}) {
   return (
-    <select className="z-10 menu rounded text-4xl text-center capitalize mb-4 md:mb-12" onChange={onChangeCharacter}>
+    <select className="z-10 menu rounded text-4xl text-center capitalize mb-4" onChange={onChangeCharacter}>
       {characterList.map((character) => (
         <option className="text-black bg-white capitalize text-2xl">{character}</option>
       ))}
@@ -60,54 +60,58 @@ function App() {
           <Character character={selectedCharacter} />
         </div>
         <div className="flex flex-col z-10 md:gap-2">
-          <div className="flex flex-col-reverse md:flex-row gap-2 justify-between">
-            <div className="flex flex-col">
-              <CharacterSwitcher characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
-            </div>
-            <div className="flex flex-row gap-2 justify-end">
-              <div className="hover:cursor-pointer" onClick={() => setIsAdvanced(!isAdvanced)} title={`Change to ${isAdvanced ? 'Simple Mode' : 'Advanced Mode'}`}>
-                <Tag>
-                  <h6 className="capitalize p-4">{ isAdvanced ? 'Advanced Mode' : 'Simple Mode' }</h6>
-                </Tag>
-              </div>
-              <Tag title="Base Health">
-                <div className="size-12">
-                  <HealthTicker />
-                </div>
-                <h6 className="capitalize">{selectedCharacter.health}</h6>
-              </Tag>
-              <Tag title="Base Shield">
-                <div className="size-12">
-                  <HealthTicker type="shield" />
-                </div>
-                <h6 className="capitalize">{selectedCharacter.shield}</h6>
-              </Tag>
-              <Role roleName={selectedCharacter.role} />
-            </div>
-          </div>
           <div className="flex flex-col md:flex-row justify-between gap-2">
-              <div className="flex flex-col grow">
-                <div className="menu-dark sticky top-2 rounded w-100 text-left p-4">
-                  <h6 className="text-lg capitalize font-medium text-white">Jump to</h6>
-                  <div className="list-disc mt-2">
-                    {
-                      selectedCharacter.skills.filter((result) => result).map((skill) => {
-                        return (
-                          <li>
-                            <a className="text-white font-normal hover:text-white hover:underline capitalize" href={`#${skill.replaceAll(" ", "-").toLowerCase()}`}>{skill}</a>
-                          </li>
-                        )
-                      })
-                    }
+              <div>
+                <div className="sticky top-4">
+                  <div className="flex flex-col-reverse md:flex-row gap-2 justify-between">
+                    <div className="flex flex-col">
+                      <CharacterSwitcher characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
+                    </div>
+                  </div>
+                  <div className="menu-dark rounded w-100 text-left p-4">
+                    <h6 className="text-lg capitalize font-medium text-white">Jump to</h6>
+                    <div className="list-disc mt-2">
+                      {
+                        selectedCharacter.skills.filter((result) => result).map((skill) => {
+                          return (
+                            <li>
+                              <a className="text-white font-normal hover:text-white hover:underline capitalize" href={`#${skill.replaceAll(" ", "-").toLowerCase()}`}>{skill}</a>
+                            </li>
+                          )
+                        })
+                      }
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2 w-100 md:w-7/12">
-              {
-                selectedCharacter.skills.map((skill, key) => (
-                  <Skill key={key} skill={skill} showAdvanced={isAdvanced} />
-                ))
-              }
+                <div className="flex flex-row gap-2 justify-between">
+                  <div className="hover:cursor-pointer" onClick={() => setIsAdvanced(!isAdvanced)} title={`Change to ${isAdvanced ? 'Simple Mode' : 'Advanced Mode'}`}>
+                    <Tag>
+                      <h6 className="capitalize p-4 text-center">{ isAdvanced ? 'Advanced Mode' : 'Simple Mode' }</h6>
+                    </Tag>
+                  </div>
+                  <Tag title="Base Health">
+                    <div className="size-12">
+                      <HealthTicker />
+                    </div>
+                    <h6 className="capitalize">{selectedCharacter.health}</h6>
+                  </Tag>
+                  <Tag title="Base Shield">
+                    <div className="size-12">
+                      <HealthTicker type="shield" />
+                    </div>
+                    <h6 className="capitalize">{selectedCharacter.shield}</h6>
+                  </Tag>
+                  <Role roleName={selectedCharacter.role} />
+                </div>
+                <div className="flex flex-col gap-2">
+                {
+                  selectedCharacter.skills.map((skill, key) => (
+                    <Skill key={key} skill={skill} showAdvanced={isAdvanced} />
+                  ))
+                }
+                </div>
               </div>
           </div>
         </div>
