@@ -1,59 +1,56 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { HeroImages } from './assets/heroes'
-import { ResistanceImage } from './assets/resistances'
-import ZZZ from './assets/zzz.svg';
-import NoEntry from './assets/noentry.svg';
-import Partial from './assets/partial.svg';
+import Database from './out';
+import Character from './Character';
+import CharacterSwitcher from './CharacterSwitcher';
+import Tag from './Tag';
+import HealthTicker from './HealthTicker';
+import Role from './Role';
+import Skill from './Skill';
+import PatchSelector from './PatchSelector';
 
-import HanzoWallClimb from './assets/skills/hanzo_wallclimb.webp'
-import Characters from './out/character.json'
-import Skills from './out/skill.json'
-import { RoleImage } from './assets/role'
-
-const simpleFields = [
-  'damage',
-  'health',
-  'headshot',
-  'rate of fire',
-  'cast time',
-  'duration',
-  'area of effect',
-  'max range',
-  'ammo',
-  'movement speed',
-  'reload time',
-  'healing',
-  'healing modification',
-  'dmg. amplification',
-  'projectile speed'
-]
-
-function CharacterSwitcher({characterList, onChangeCharacter}) {
-  return (
-    <select className="z-10 menu rounded text-4xl text-center capitalize mb-4" onChange={onChangeCharacter}>
-      {characterList.map((character) => (
-        <option className="text-black bg-white capitalize text-2xl">{character}</option>
-      ))}
-    </select>
-  )
-}
-
-function App() {
-  const [selectedCharacter, setSelectedCharacter] = useState(Characters[1]);
+export default function({year = null, month = null, day = null}) {
+  const [selectedPatch, setSelectedPatch] = useState(!year ? 'default' : `${year}${month}${day}`);
+  
+  console.log('Loading Application', selectedPatch, Database);
+  const [characterList, setCharacterList] = useState(getCharacterListByPatch(selectedPatch));
+  console.log('Fetched Characters', characterList);
+  const [selectedCharacter, setSelectedCharacter] = useState(Database[selectedPatch].Character[0]);
+  console.log('Default Character Set', selectedCharacter);
   const [isAdvanced, setIsAdvanced] = useState(true);
+  console.log('Advance Mode', isAdvanced);
 
-  const characterList = Characters.map((character) => (
-    character.name
-  )).filter((_, index) => index != 0).sort();
+  useEffect(() => {
+    if(year && month && day) {
+      console.log('Patch Modified', year, month, day)
+      setSelectedPatch(`${year}${month}${day}`);
+    }
+  }, [year, month, day])
+
+  useEffect(() => {
+    console.log('Patch changed, selecting character', selectedPatch)
+    setCharacterList(
+      getCharacterListByPatch(selectedPatch)
+    );
+  }, [selectedPatch])
+
+  function getCharacterListByPatch(patch = '') {
+    return Database[patch].Character.map((character) => (
+      character.name
+    )).filter((_, index) => index != 0).sort()
+  }
+
   function handleChangeCharacter(event) {
     const characterName = event.target.value;
-    const character = Characters.find((character) => (
-      character.name === characterName
-    ));
-    setSelectedCharacter(character);
+    setSelectedCharacter(
+        Database[selectedPatch].Character.find((character) => (
+        character.name === characterName
+      ))
+    );
   }
-  return (
+  
+  console.log('Defined two functions', characterList, selectedCharacter.skills);
+  return characterList ? (
     <div className="flex justify-center container w-screen mt-4 md:w-[768px] mx-auto">
       <div className="flex flex-row">
         <div>
@@ -69,17 +66,25 @@ function App() {
                     </div>
                   </div>
                   <div className="menu-dark rounded w-100 text-left p-4">
-                    <h6 className="text-lg capitalize font-medium text-white">Jump to</h6>
+                    <div className="flex flex-row justify-between">
+                      <h6 className="text-lg capitalize font-medium text-white">Jump to </h6>
+                    </div>
                     <div className="list-disc mt-2">
                       {
-                        selectedCharacter.skills.filter((result) => result).map((skill) => {
-                          return (
-                            <li>
-                              <a className="text-white font-normal hover:text-white hover:underline capitalize" href={`#${skill.replaceAll(" ", "-").toLowerCase()}`}>{skill}</a>
-                            </li>
-                          )
-                        })
+                        selectedCharacter ?
+                          selectedCharacter.skills.filter((result) => result).map((skill, key) => {
+                            console.log('Skill', skill);
+                            return (
+                              <li key={key}>
+                                <a className="text-white font-normal hover:text-white hover:underline capitalize" href={`#${skill.replaceAll(" ", "-").toLowerCase()}`}>{skill}</a>
+                              </li>
+                            )
+                          })
+                        : null
                       }
+                    </div>
+                    <div class="flex flex-row justify-center mt-4">
+                      <PatchSelector />
                     </div>
                   </div>
                 </div>
@@ -93,7 +98,7 @@ function App() {
                   </div>
                   <Tag title="Base Health">
                     <div className="size-12">
-                      <HealthTicker />
+                      <HealthTicker type="health" />
                     </div>
                     <h6 className="capitalize">{selectedCharacter.health}</h6>
                   </Tag>
@@ -107,9 +112,17 @@ function App() {
                 </div>
                 <div className="flex flex-col gap-2">
                 {
-                  selectedCharacter.skills.map((skill, key) => (
-                    <Skill key={key} skill={skill} showAdvanced={isAdvanced} />
-                  ))
+                  selectedCharacter.skills.filter((res) => res).map((skill_name, key) => {
+                    console.log('s', skill_name, selectedPatch);    
+                    return (
+                    <Skill
+                      key={key}
+                      patch={selectedPatch}
+                      skill_name={skill_name}
+                      showAdvanced={isAdvanced}
+                    />
+                  )
+                })
                 }
                 </div>
               </div>
@@ -117,135 +130,5 @@ function App() {
         </div>
       </div>
     </div>
-  )
+  ) : <div>Loading</div>
 }
-
-function HealthTicker({type = ''}) {
-  return (
-    <div className="flex flex-row">
-      <div className={`hp-ticker hp-ticker-${type}`}>
-          &nbsp;
-      </div>
-      <div className={`hp-ticker hp-ticker-${type}`}>
-          &nbsp;
-      </div>
-      <div className={`hp-ticker hp-ticker-${type}`}>
-          &nbsp;
-      </div>
-    </div>
-  )
-}
-
-function Role({roleName}) {
-  return (
-    <Tag image={RoleImage[roleName]} title={"Character Role"}>
-      <h6 className="capitalize">{roleName}</h6>
-    </Tag>
-  )
-}
-
-function Tag({image, title = null, children}) {
-  return (
-    <div className="flex flex-col size-24 menu rounded justify-center items-center" title={title}>
-      {
-        image &&
-          (
-            <div className="size-12">
-              <img src={image} />
-            </div>
-          )
-      }
-      {children}
-    </div>
-  )
-}
-
-function Character({character}) {
-  return (
-    <div className="fixed top-0 left-0 z-1">
-      <img src={HeroImages[character.name.replaceAll('.', '').replaceAll(' ', '_').toLowerCase()]} />
-    </div>
-  );
-}
-
-function Skill({skill, showAdvanced}) {
-  const selectedSkill = Skills.find(skills => skills.name === skill);
-  const slugIt = (name) => {
-    return name.replaceAll(' ', '-').replaceAll('.', '').toLowerCase();
-  }
-  if(!selectedSkill) return null;
-  return (
-  <div className="flex flex-col w-100">
-    <div className="flex flex-col gap-4 py-4 w-100 menu rounded-t px-4">
-      <div className="flex flex-row justify-center w-100 items-center" id={selectedSkill.name.replaceAll(" ", "-").toLowerCase()}>
-        <img src={HanzoWallClimb} />
-        <h4 className="w-24 text-lg capitalize font-light">{selectedSkill.name}</h4>
-      </div>
-      <div className="flex flex-col grow gap-1">
-        {selectedSkill.meta.filter(object => showAdvanced || simpleFields.includes(object.key.toLowerCase())).map((object, key) => (
-          <div className="flex flex-row justify-between gap-2 menu-dark rounded border-1 text-sm p-2 w-100" key={key}>
-            <p className={`font-medium text-left capitalize color-code-${slugIt(object.key)}`}>
-              {object.key}
-            </p>
-            <p className={`text-right`}>
-              {object.value}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-    <div className="flex flex-row px-4 py-2 w-100 menu-dark rounded-b gap-8 justify-end items-end">
-        {
-          selectedSkill.resistances.filter((resistance) => resistance).map((resistance, key) => (<Resistance key={key} imageName={(resistance.replaceAll(' ', '_').replaceAll('\/', '_')).toLowerCase()} tooltip={resistance} />))
-        }
-    </div>
-  </div>
-  )
-}
-
-function Resistance({imageName, tooltip}) {
-  //const [selectedStatus, setSelectedStatus] = useState(<img src={ResistanceImage[imageName]} title={tooltip} />);
-  const statusCheck = {
-    ignores: {
-      extraClass: (
-      <div className="relative">
-        <img src={ResistanceImage[imageName]} title={tooltip} className="opacity-90" />
-        <img src={ZZZ} className="absolute top-0 right-0" title={tooltip} width="24"/>
-      </div>
-      )
-    },
-    blocked: {
-      extraClass: (
-        <div className="relative">
-          <img src={ResistanceImage[imageName]} title={tooltip} />
-          <img src={NoEntry} className="absolute top-0 right-0 opacity-50" title={tooltip}  width="24"/>
-        </div>
-      )
-    },
-    partially: {
-      extraClass: (
-        <div className="relative">
-          <img src={ResistanceImage[imageName]} title={tooltip} className="opacity-90" />
-          <img src={Partial} className="absolute top-0 right-0 w-[10px]" title={tooltip}  width="24"/>
-        </div>
-      )
-    },
-  };
-  // hacky handling
-  let selectedStatusEl = <img src={ResistanceImage[imageName]} title={tooltip} />
-  let selectedStatus = null;
-  Object.keys(statusCheck).forEach((status) => {
-    if(imageName.indexOf(status) > -1) {
-      selectedStatusEl = statusCheck[status].extraClass;
-      selectedStatus = status;
-    }
-  });
-
-  return (
-    <div className={`flex flex-col`}>
-      {selectedStatusEl} 
-    </div>
-  )
-}
-
-export default App

@@ -1,0 +1,822 @@
+[
+    {
+        "name": "juno",
+        "role": "support",
+        "health": "75.0",
+        "shield": "150.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "martian overboots",
+            "mediblaster",
+            "pulsar torpedos",
+            "glide boost",
+            "hyper ring",
+            "orbital ray",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "ana",
+        "role": "support",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "biotic rifle",
+            "sleep dart",
+            "biotic grenade",
+            "nano boost",
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "ashe",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "the viper",
+            "the viper (ads)",
+            "dynamite",
+            "coach gun",
+            "b.o.b",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "baptiste",
+        "role": "support",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "exo boots",
+            "biotic launcher",
+            "biotic launcher alt fire",
+            "regenerative burst",
+            "immortality field",
+            "amplification matrix",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "bastion",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "100.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "ironcald",
+            "configuration: recon",
+            "reconfigure",
+            "configuration: assualt",
+            "a-36 tactical grenade",
+            "configuration: artillery",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "brigitte",
+        "role": "support",
+        "health": "200.0",
+        "shield": "50.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "inspire",
+            "rocket flail",
+            "repair pack",
+            "whip shot",
+            "barrier shield",
+            "shield bash",
+            "rally",
+            null
+        ]
+    },
+    {
+        "name": "cassidy",
+        "role": "damage",
+        "health": "275.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "peacekeeper",
+            "peacekeeper alt fire",
+            "combat roll",
+            "flashbang",
+            "deadeye",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "d.va",
+        "role": "tank",
+        "health": "375.0",
+        "shield": "0.0",
+        "special_health": "175.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "eject!",
+            "fusion cannons",
+            "light gun",
+            "defense matrix",
+            "boosters",
+            "micro missles",
+            "self-destruct",
+            "call mech"
+        ]
+    },
+    {
+        "name": "doomfist",
+        "role": "tank",
+        "health": "525.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "the best defense...",
+            "hand cannon",
+            "seismic slam",
+            "power block",
+            "rocket punch",
+            "meteor strike",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "echo",
+        "role": "damage",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "glide",
+            "tri-shot",
+            "sticky bombs",
+            "flight",
+            "focusing beam",
+            "duplicate",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "genji",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "cyber-agility",
+            "shuriken",
+            "shuriken alt fire",
+            "swift strike",
+            "deflect",
+            "dragonblade",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "hanzo",
+        "role": "damage",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "wall climb",
+            "storm bow",
+            "sonic arrow",
+            "storm arrows",
+            "lunge",
+            "dragonstrike",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "illari",
+        "role": "support",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "solar rifle",
+            "solar rifle alt fire",
+            "outburst",
+            "healing pylon",
+            "captive sun",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "junker queen",
+        "role": "tank",
+        "health": "525.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "adrenaline rush",
+            "scattergun",
+            "jagged blade",
+            "commanding shout",
+            "carnage",
+            "rampage",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "junkrat",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "total mayhem",
+            "frag launcher",
+            "concussion mine",
+            "steel trap",
+            "rip tire",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "kiriko",
+        "role": "support",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "wall climb (kiriko)",
+            "healing ofuda",
+            "kunai",
+            "swift step",
+            "protection suzu",
+            "kitsune rush",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "lifeweaver",
+        "role": "support",
+        "health": "225.0",
+        "shield": "50.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "healing blossom",
+            "thorn volley",
+            "petal platform",
+            "rejuvenating dash",
+            "life grip",
+            "tree of life",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "lucio",
+        "role": "support",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "wall ride",
+            "sonic amplifier",
+            "soundwave",
+            "crossfade",
+            "amp it up",
+            "sound barrier",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "mauga",
+        "role": "tank",
+        "health": "525.0",
+        "shield": "200.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "berserker",
+            "incendiary chaingun",
+            "volatile chaingun",
+            "overrun",
+            "cardiac overdrive",
+            "cage fight",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "mei",
+        "role": "damage",
+        "health": "300.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "endothermic blaster",
+            "endothermic blaster alt fire",
+            "cryo-freeze",
+            "ice wall",
+            "blizzard",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "mercy",
+        "role": "support",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "sympathetic recovery",
+            "aneglic descent",
+            "caduceus staff",
+            "caduceus blaster",
+            "gaurdian angel",
+            "resurrect",
+            "valkyrie",
+            null
+        ]
+    },
+    {
+        "name": "moira",
+        "role": "support",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "biotic grasp",
+            "biotic grasp alt fire",
+            "biotic orb",
+            "fade",
+            "coalescence",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "orisa",
+        "role": "tank",
+        "health": "275.0",
+        "shield": "350.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "augmented fusion driver",
+            "energy javelin",
+            "fortify",
+            "javelin spin",
+            "terra surge",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "pharah",
+        "role": "damage",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "hover jets",
+            "rocket launcher",
+            "jet dash",
+            "jump jet",
+            "concussive blast",
+            "barrage",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "ramattra",
+        "role": "tank",
+        "health": "400.0",
+        "shield": "75.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "void accelerator",
+            "void barrier",
+            "nemesis form",
+            "pummel",
+            "block",
+            "ravenous vortex",
+            "annihilation",
+            null
+        ]
+    },
+    {
+        "name": "reaper",
+        "role": "damage",
+        "health": "300.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "the reaping",
+            "hellfire shotgun",
+            "wraith form",
+            "shadow step",
+            "death blossom",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "reinhardt",
+        "role": "tank",
+        "health": "400.0",
+        "shield": "300.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "rocket hammer",
+            "barrier field",
+            "charge",
+            "fire strike",
+            "earthshatter",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "roadhog",
+        "role": "tank",
+        "health": "750.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "scrap gun",
+            "take a breather",
+            "chain hook",
+            "pig pen",
+            "whole hog",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "sigma",
+        "role": "tank",
+        "health": "350.0",
+        "shield": "275.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "hyperspheres",
+            "experimental barrier",
+            "kinetic grasp",
+            "accretion",
+            "gravitic flux",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "sojourn",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "railgun",
+            "railgun alt fire",
+            "power slide",
+            "disruptor shot",
+            "overclock",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "soldier: 76",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "heavy pulse rifle",
+            "helix rockets",
+            "sprint",
+            "biotic field",
+            "tactical visor",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "sombra",
+        "role": "damage",
+        "health": "225.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "stealth",
+            "machine pistol",
+            "hack",
+            "virus",
+            "translocator",
+            "emp",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "symmetra",
+        "role": "damage",
+        "health": "125.0",
+        "shield": "150.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "photon projector",
+            "photon projector alt fire",
+            "sentry turret",
+            "teleporter",
+            "photon barrier",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "torbjorn",
+        "role": "damage",
+        "health": "225.0",
+        "shield": "75.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "rivet gun",
+            "rivet gun alt fire",
+            "forge hammer",
+            "deploy turret",
+            "overload",
+            "molten core",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "tracer",
+        "role": "damage",
+        "health": "175.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "pulse pistols",
+            "blink",
+            "recall",
+            "pulse bomb",
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "venture",
+        "role": "damage",
+        "health": "250.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "clobber",
+            "explorer's resolve",
+            "smart excavator",
+            "drill dash",
+            "burrow",
+            "tectonic shock",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "widowmaker",
+        "role": "damage",
+        "health": "200.0",
+        "shield": "0.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "widow's kiss",
+            "widow's kiss (ads)",
+            "grappling hook",
+            "venom mine",
+            "infra-sight",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "winston",
+        "role": "tank",
+        "health": "375.0",
+        "shield": "250.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "tesla cannon",
+            "tesla cannon alt fire",
+            "barrier projector",
+            "jump pack",
+            "primal rage",
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "wrecking ball",
+        "role": "tank",
+        "health": "450.0",
+        "shield": "150.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "175.0",
+        "image": "",
+        "skills": [
+            "quad cannons",
+            "grappling claw",
+            "roll",
+            "adaptive shield",
+            "piledriver",
+            "minefield",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "zarya",
+        "role": "tank",
+        "health": "325.0",
+        "shield": "125.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "energy",
+            "patricle cannon",
+            "particle cannon alt fire",
+            "particle barrier",
+            "projected barrier",
+            "graviton surge",
+            null,
+            null
+        ]
+    },
+    {
+        "name": "zenyatta",
+        "role": "support",
+        "health": "75.0",
+        "shield": "175.0",
+        "special_health": "0.0",
+        "overhealth": "0.0",
+        "armor": "0.0",
+        "image": "",
+        "skills": [
+            "snap kick",
+            "orb of destruction",
+            "orb of destruction alt fire",
+            "orb of harmony",
+            "orb of discord",
+            "transcendence",
+            null,
+            null
+        ]
+    }
+]
