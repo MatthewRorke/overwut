@@ -37,7 +37,7 @@ export default function({year = null, month = null, day = null}) {
   function getCharacterListByPatch(patch = '') {
     return Database[patch].Character.map((character) => (
       character.name
-    )).filter((_, index) => index != 0).sort()
+    )).sort()
   }
 
   function handleChangeCharacter(event) {
@@ -62,7 +62,7 @@ export default function({year = null, month = null, day = null}) {
                 <div className="sticky top-4">
                   <div className="flex flex-col-reverse md:flex-row gap-2 justify-between">
                     <div className="flex flex-col">
-                      <CharacterSwitcher characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
+                      <CharacterSwitcher selectedCharacterName={selectedCharacter.name} characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
                     </div>
                   </div>
                   <div className="menu-dark rounded w-100 text-left p-4">
@@ -83,8 +83,8 @@ export default function({year = null, month = null, day = null}) {
                         : null
                       }
                     </div>
-                    <div class="flex flex-row justify-center mt-4">
-                      <PatchSelector />
+                    <div className="flex flex-row justify-center mt-4">
+                      <PatchSelector onChange={() => {}}/>
                     </div>
                   </div>
                 </div>
