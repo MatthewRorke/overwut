@@ -26,7 +26,7 @@ export default function() {
   const selectedCharacter = useSelector(state => state.user.selectedCharacter);
   // const isAdvanced = useSelector(state => state.user.isAdvanced)
 
-  const [isSelectingCharacter, setIsSelectingCharacter] = useState(true);
+  const [isSelectingCharacter, setIsSelectingCharacter] = useState(false);
   const [foundCharacterCreate, setFoundCharacterCreate] = useState(false);
 
   const dispatch = useDispatch();
