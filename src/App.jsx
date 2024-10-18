@@ -44,13 +44,15 @@ export default function() {
   useEffect(() => {
     if(selectedCharacterName != selectedCharacter) {
       console.log('change accepted');
-      dispatch(setSelectedCharacter(selectedCharacterName))
+      dispatch(setSelectedCharacter(selectedCharacterName.replaceAll("+", " ").replaceAll("%20", " ")))
     }
   }, [selectedCharacterName]);
 
   useEffect(() => {
     console.log('Patch changed');
-    dispatch(setSelectedCharacter(selectedCharacterName))
+    dispatch(setSelectedCharacter(
+      selectedCharacterName.replaceAll("+", " ").replaceAll("%20", " ")
+    ))
   }, [selectedPatch]);
 
   function handleChangeCharacter(characterName) {

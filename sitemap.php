@@ -37,7 +37,7 @@ foreach($patches as $patch) {
             urlencode($patch[3])
         ];
         $entry[] = "<url>";
-        $entry[] = "<loc>".$url."/".$hero."/patch/".implode("/", $page)."</loc>";
+        $entry[] = "<loc>".$url."/".urlencode($hero)."/patch/".implode("/", $page)."</loc>";
         $entry[] = "<lastmod>".date("Y-m-d")."</lastmod>";
         $entry[] = "</url>";
         $lines[] = implode(PHP_EOL, $entry);
