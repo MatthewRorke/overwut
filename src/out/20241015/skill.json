@@ -37,7 +37,7 @@
             },
             {
                 "key": "falloff range",
-                "value": "30 - 50 meters (damage and healing)"
+                "value": "20 - 35 meters (damage and healing)"
             },
             {
                 "key": "headshot",
@@ -45,7 +45,7 @@
             },
             {
                 "key": "healing",
-                "value": "6.5 - 1.95 (per round)"
+                "value": "6 - 1.95 (per round)"
             },
             {
                 "key": "healing",
@@ -802,7 +802,7 @@
         "meta": [
             {
                 "key": "barrier health",
-                "value": "1600"
+                "value": "1500"
             },
             {
                 "key": "cast time",
@@ -1578,6 +1578,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.08 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Primary fire recoil reduced by 30%"
             }
         ],
         "resistances": [
@@ -1847,6 +1851,10 @@
             {
                 "key": "projectile speed",
                 "value": "45 m\/s"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown increased from 5 to 5.5 seconds"
             }
         ],
         "resistances": [
@@ -4631,7 +4639,7 @@
             },
             {
                 "key": "duration",
-                "value": "3 seconds (damage over time)"
+                "value": "4 seconds (damage over time)"
             },
             {
                 "key": "spread angle",
@@ -6528,10 +6536,14 @@
             {
                 "key": "projectile radius",
                 "value": "0.575 meters"
+            },
+            {
+                "key": "damage to barriers",
+                "value": "2.5x"
             }
         ],
         "resistances": [
-            "ignores barriers",
+            "blocked by barriers",
             "ignores defense matrix\/kinetic grasp",
             "blocked by deflect\/javelin spin",
             "affected by damage boosts",
@@ -7453,6 +7465,14 @@
             {
                 "key": "projectile radius",
                 "value": "0.175 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Energy no longer stops degenerating at 25 energy"
+            },
+            {
+                "key": "notes",
+                "value": "Time before energy degeneration begins increased from 7 to 12 seconds"
             }
         ],
         "resistances": [
@@ -7537,7 +7557,7 @@
         "meta": [
             {
                 "key": "damage",
-                "value": "60 per second"
+                "value": "80 per second"
             },
             {
                 "key": "damage",
@@ -7566,6 +7586,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.2 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Now generates 25% of damage done to enemy players as Railgun energy"
             }
         ],
         "resistances": [
@@ -7807,6 +7831,22 @@
             {
                 "key": "cooldown",
                 "value": "3.5 seconds"
+            },
+            {
+                "key": "notes",
+                "value": "No longer passive and now activates by using Translocator"
+            },
+            {
+                "key": "notes",
+                "value": "Now has a 5 second duration"
+            },
+            {
+                "key": "notes",
+                "value": "Added stealth timer around the reticle and removed ability icon"
+            },
+            {
+                "key": "notes",
+                "value": "Taking damage now reveals Sombra for 1 second instead of ending stealth"
             }
         ],
         "resistances": [
@@ -7815,6 +7855,33 @@
             null,
             null,
             null,
+            null
+        ]
+    },
+    {
+        "name": "opportunist",
+        "type": "Damage Reduction",
+        "trigger": "Pasive",
+        "meta": [
+            {
+                "key": null,
+                "value": "The Opportunist passive has been added back in."
+            },
+            {
+                "key": null,
+                "value": "Increases Sombra's weapon damage versus hacked targets by 20%."
+            },
+            {
+                "key": null,
+                "value": "See critically injured enemies through walls"
+            }
+        ],
+        "resistances": [
+            "blocked by barriers",
+            "blocked by defense matrix\/kinetic grasp",
+            "blocked by deflect\/javelin spin",
+            "affected by damage boosts",
+            "affected by amplification matrix",
             null
         ]
     },
@@ -7893,6 +7960,22 @@
             {
                 "key": "max. range",
                 "value": "15 meters"
+            },
+            {
+                "key": "cast time",
+                "value": "0.65 + 0.4 seconds"
+            },
+            {
+                "key": "hacked ability lockout effect duration",
+                "value": "1.0"
+            },
+            {
+                "key": "notes",
+                "value": "No longer ends Stealth but does reveal Sombra"
+            },
+            {
+                "key": "notes",
+                "value": "BOB hacked stun duration reduced from 10 to 3 seconds"
             }
         ],
         "resistances": [
@@ -7975,6 +8058,10 @@
             {
                 "key": "projectile speed",
                 "value": "72 m\/s"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown increased from 5 to 7 seconds"
             }
         ],
         "resistances": [
@@ -8022,6 +8109,10 @@
             {
                 "key": "area of effect",
                 "value": "15 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Ultimate cost increased 12%"
             }
         ],
         "resistances": [

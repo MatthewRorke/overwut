@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import StockImage from './assets/skills/hanzo_wallclimb.webp';
 import Resistance from './Resistance';
 import Database from './out';
+import { useSelector } from 'react-redux';
 
 const simpleFields = [
   'damage',
@@ -21,25 +22,10 @@ const simpleFields = [
   'projectile speed'
 ]
 
-export default function Skill({patch, skill_name, showAdvanced}) {
-    console.log('Skill', skill_name, patch);
-    const [skill, setSkill] = useState(
-      Database[patch].Skill.find((skill) => {
-        console.log('Generating skill ' + skill_name);
-        return skill.name == skill_name
-      })
-    ) // Yes this is a useState
-
-    useEffect(() => {
-      console.log('Skill changed', skill_name);
-      setSkill(Database[patch].Skill.find((skill) => {
-        console.log('Generating skill ' + skill_name);
-        return skill.name == skill_name
-      })) // Yes I duplicated it
-    }, [skill_name])
-
+export default function Skill({skill = null}) {
+    const showAdvanced = useSelector(state => state.user.isAdvanced);
     function slugIt(name) {
-      return name.replaceAll(' ', '-').replaceAll('.', '').toLowerCase();
+      return name ? name.replaceAll(' ', '-').replaceAll('.', '').toLowerCase() : name;
     }
     if(!skill) return null;
     return (
@@ -50,8 +36,8 @@ export default function Skill({patch, skill_name, showAdvanced}) {
           <h4 className="w-24 text-lg capitalize font-light">{skill.name}</h4>
         </div>
         <div className="flex flex-col grow gap-1">
-          {skill.meta.filter(object => showAdvanced || simpleFields.includes(object.key.toLowerCase())).map((object, key) => (
-            <div className="flex flex-row justify-between gap-2 menu-dark rounded border-1 text-sm p-2 w-100" key={key}>
+          {skill.meta.filter(object => showAdvanced != null || simpleFields.includes(object.key.toLowerCase())).map((object, key) => (
+            <div className="flex flex-row justify-between gap-2 menu-dark rounded border-1 text-sm p-2 w-100" key={`skill-container-${object.key}-${key}`}>
               <p className={`font-medium text-left capitalize color-code-${slugIt(object.key)}`}>
                 {object.key}
               </p>
@@ -64,7 +50,7 @@ export default function Skill({patch, skill_name, showAdvanced}) {
       </div>
       <div className="flex flex-row px-4 py-2 w-100 menu-dark rounded-b gap-8 justify-end items-end">
           {
-            skill.resistances.filter((resistance) => resistance).map((resistance, key) => (<Resistance key={key} imageName={(resistance.replaceAll(' ', '_').replaceAll('\/', '_')).toLowerCase()} tooltip={resistance} />))
+            skill.resistances.map((resistance) => (<Resistance key={`resistance-${skill.name}-${resistance.name}`} imageName={(resistance.name.replaceAll(' ', '_').replaceAll('\/', '_')).toLowerCase()} tooltip={resistance.name} />))
           }
       </div>
     </div>

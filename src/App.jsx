@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useEffect, useReducer, useState } from 'react'
 import Database from './out';
 import Character from './Character';
 import CharacterSwitcher from './CharacterSwitcher';
@@ -8,127 +7,119 @@ import HealthTicker from './HealthTicker';
 import Role from './Role';
 import Skill from './Skill';
 import PatchSelector from './PatchSelector';
+import { RoleImage } from './assets/role';
+import { useNavigate, useParams } from 'react-router-dom';
+import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
+import CharacterSelector from './CharacterSelector';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSelectedCharacter, setSelectedPatch } from './Store/userSlice';
+import SkillList from './SkillList';
+import TopBar from './TopBar';
+import SkillIndex from './SkillIndex';
 
-export default function({year = null, month = null, day = null}) {
-  const [selectedPatch, setSelectedPatch] = useState(!year ? 'default' : `${year}${month}${day}`);
-  
-  console.log('Loading Application', selectedPatch, Database);
-  const [characterList, setCharacterList] = useState(getCharacterListByPatch(selectedPatch));
-  console.log('Fetched Characters', characterList);
-  const [selectedCharacter, setSelectedCharacter] = useState(Database[selectedPatch].Character[0]);
-  console.log('Default Character Set', selectedCharacter);
-  const [isAdvanced, setIsAdvanced] = useState(true);
-  console.log('Advance Mode', isAdvanced);
+console.log('db', Database);
+
+export default function() {
+  const {year = '2024', month = '10', day = '15', selectedCharacterName = 'juno'} = useParams();
+  const selectedPatch = useSelector(state => state.user.selectedPatch);
+  const characterList = useSelector(state => state.user.characterList)
+  const selectedCharacter = useSelector(state => state.user.selectedCharacter);
+  // const isAdvanced = useSelector(state => state.user.isAdvanced)
+
+  const [isSelectingCharacter, setIsSelectingCharacter] = useState(true);
+  const [foundCharacterCreate, setFoundCharacterCreate] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const navigate = useNavigate();
+
+  //const [, forceUpdate] = useReducer(x => x + 1, 0);
 
   useEffect(() => {
     if(year && month && day) {
-      console.log('Patch Modified', year, month, day)
-      setSelectedPatch(`${year}${month}${day}`);
+      dispatch(setSelectedPatch(`${year}${month}${day}`));
     }
   }, [year, month, day])
 
   useEffect(() => {
-    console.log('Patch changed, selecting character', selectedPatch)
-    setCharacterList(
-      getCharacterListByPatch(selectedPatch)
-    );
-  }, [selectedPatch])
+    if(selectedCharacterName != selectedCharacter) {
+      console.log('change accepted');
+      dispatch(setSelectedCharacter(selectedCharacterName))
+    }
+  }, [selectedCharacterName]);
 
-  function getCharacterListByPatch(patch = '') {
-    return Database[patch].Character.map((character) => (
-      character.name
-    )).sort()
-  }
+  useEffect(() => {
+    console.log('Patch changed');
+    dispatch(setSelectedCharacter(selectedCharacterName))
+  }, [selectedPatch]);
 
-  function handleChangeCharacter(event) {
-    const characterName = event.target.value;
-    setSelectedCharacter(
-        Database[selectedPatch].Character.find((character) => (
-        character.name === characterName
-      ))
-    );
+  function handleChangeCharacter(characterName) {
+    navigate(`/${characterName}/patch/${year}/${month}/${day}`);
+    setIsSelectingCharacter(false)
   }
   
-  console.log('Defined two functions', characterList, selectedCharacter.skills);
-  return characterList ? (
-    <div className="flex justify-center container w-screen mt-4 md:w-[768px] mx-auto">
-      <div className="flex flex-row">
-        <div>
-          <Character character={selectedCharacter} />
-        </div>
-        <div className="flex flex-col z-10 md:gap-2">
-          <div className="flex flex-col md:flex-row justify-between gap-2">
-              <div>
-                <div className="sticky top-4">
-                  <div className="flex flex-col-reverse md:flex-row gap-2 justify-between">
-                    <div className="flex flex-col">
-                      <CharacterSwitcher selectedCharacterName={selectedCharacter.name} characterList={characterList} onChangeCharacter={handleChangeCharacter}/>
+  return characterList.length ? (
+    <>
+      {
+        isSelectingCharacter && (
+          <CharacterSelector
+            onCharacterChange={handleChangeCharacter}
+            onClose={() => setIsSelectingCharacter(false)}
+          />
+        )
+      }
+      {
+        selectedCharacter &&
+        (
+        <div className="z-10">
+          <div className={`flex flex-col justify-center container w-screen mt-4 md:w-[768px] mx-auto z-10 ${isSelectingCharacter && 'blur-sm'}`}>
+            <Character character={selectedCharacter} />
+            <div className="flex flex-col z-20 md:gap-2">
+              <div className="flex flex-col md:flex-row justify-between gap-2">
+                  <div>
+                    <div className="sticky top-4">
+                      <div className="flex flex-row justify-center items-center my-4">
+                        <h4 className="text-3xl capitalize font-medium text-gray-800">{selectedCharacter}</h4>
+                      </div>
+                      <div className="menu-dark rounded w-100 text-left p-4">
+                        <div className="flex flex-row justify-between">
+                          <h6 className="text-lg capitalize font-medium text-white">Jump to </h6>
+                        </div>
+                        <div className="list-disc mt-2">
+                          <SkillIndex />
+                        </div>
+                        <div className="flex flex-row justify-center mt-4">
+                          <PatchSelector year={year} month={month} day={day} onChange={(newPath) => {
+                            navigate(`/${selectedCharacterName}/patch/${newPath}`);
+                          }}/>
+                        </div>
+                      </div>
+                      <div className={`flex m-auto drop-shadow-sm justify-center items-center ${!foundCharacterCreate && 'animate-[bounce_2s_ease-in-out_8]'} bg-slate-600 rounded-full size-8 mt-6 `}>
+                        <div className={`text-xl text-green-300'}`}>
+                          <FaArrowDown />
+                        </div>
+                      </div>
+                      <div
+                        className={`flex items-center justify-center mt-2 mx-auto menu-dark z-40 rounded p-4 hover:cursor-pointer`}
+                        onMouseEnter={(() => {
+                          setFoundCharacterCreate(true);
+                        })}
+                        onClick={() => setIsSelectingCharacter(true)}
+                      >
+                        Change Character
+                      </div>
                     </div>
                   </div>
-                  <div className="menu-dark rounded w-100 text-left p-4">
-                    <div className="flex flex-row justify-between">
-                      <h6 className="text-lg capitalize font-medium text-white">Jump to </h6>
-                    </div>
-                    <div className="list-disc mt-2">
-                      {
-                        selectedCharacter ?
-                          selectedCharacter.skills.filter((result) => result).map((skill, key) => {
-                            console.log('Skill', skill);
-                            return (
-                              <li key={key}>
-                                <a className="text-white font-normal hover:text-white hover:underline capitalize" href={`#${skill.replaceAll(" ", "-").toLowerCase()}`}>{skill}</a>
-                              </li>
-                            )
-                          })
-                        : null
-                      }
-                    </div>
-                    <div className="flex flex-row justify-center mt-4">
-                      <PatchSelector onChange={() => {}}/>
-                    </div>
+                  <div className="flex flex-col gap-2 w-100 md:w-7/12">
+                    <TopBar />
+                    <SkillList />
                   </div>
-                </div>
               </div>
-              <div className="flex flex-col gap-2 w-100 md:w-7/12">
-                <div className="flex flex-row gap-2 justify-between">
-                  <div className="hover:cursor-pointer" onClick={() => setIsAdvanced(!isAdvanced)} title={`Change to ${isAdvanced ? 'Simple Mode' : 'Advanced Mode'}`}>
-                    <Tag>
-                      <h6 className="capitalize p-4 text-center">{ isAdvanced ? 'Advanced Mode' : 'Simple Mode' }</h6>
-                    </Tag>
-                  </div>
-                  <Tag title="Base Health">
-                    <div className="size-12">
-                      <HealthTicker type="health" />
-                    </div>
-                    <h6 className="capitalize">{selectedCharacter.health}</h6>
-                  </Tag>
-                  <Tag title="Base Shield">
-                    <div className="size-12">
-                      <HealthTicker type="shield" />
-                    </div>
-                    <h6 className="capitalize">{selectedCharacter.shield}</h6>
-                  </Tag>
-                  <Role roleName={selectedCharacter.role} />
-                </div>
-                <div className="flex flex-col gap-2">
-                {
-                  selectedCharacter.skills.filter((res) => res).map((skill_name, key) => {
-                    console.log('s', skill_name, selectedPatch);    
-                    return (
-                    <Skill
-                      key={key}
-                      patch={selectedPatch}
-                      skill_name={skill_name}
-                      showAdvanced={isAdvanced}
-                    />
-                  )
-                })
-                }
-                </div>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        )
+      }
+    </>
   ) : <div>Loading</div>
 }

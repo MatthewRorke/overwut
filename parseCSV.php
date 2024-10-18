@@ -18,7 +18,7 @@ function generateResistancesJson($reader) {
         if(strtolower($row[0]) == "name") continue;
         list($name) = $row;
         $ret[] = [
-            'name' => strtolower($name)
+            'name' => trim(strtolower($name))
         ];
     }
     generateJson($ret, 'resistance.json');
@@ -53,7 +53,7 @@ function generateSkillJson($reader) {
             ];
         }
         $ret[] = [
-            'name' => strtolower($row[0]),
+            'name' => trim(strtolower($row[0])),
             'type' => $row[1],
             'trigger' => $row[2],
             'meta' => $new_meta,
