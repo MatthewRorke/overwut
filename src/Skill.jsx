@@ -19,7 +19,8 @@ const simpleFields = [
   'healing',
   'healing modification',
   'dmg. amplification',
-  'projectile speed'
+  'projectile speed',
+  'overhealth'
 ]
 
 export default function Skill({skill = null}) {
@@ -27,6 +28,7 @@ export default function Skill({skill = null}) {
     function slugIt(name) {
       return name ? name.replaceAll(' ', '-').replaceAll('.', '').toLowerCase() : name;
     }
+    console.log('s', skill);
     if(!skill) return null;
     return (
     <div className="flex flex-col w-100">
@@ -36,7 +38,7 @@ export default function Skill({skill = null}) {
           <h4 className="w-24 text-lg capitalize font-light">{skill.name}</h4>
         </div>
         <div className="flex flex-col grow gap-1">
-          {skill.meta.filter(object => showAdvanced != null || simpleFields.includes(object.key.toLowerCase())).map((object, key) => (
+          {skill.meta.filter(object => showAdvanced || simpleFields.includes(object.key.toLowerCase())).map((object, key) => (
             <div className="flex flex-row justify-between gap-2 menu-dark rounded border-1 text-sm p-2 w-100" key={`skill-container-${object.key}-${key}`}>
               <p className={`font-medium text-left capitalize color-code-${slugIt(object.key)}`}>
                 {object.key}

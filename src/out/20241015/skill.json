@@ -7864,15 +7864,15 @@
         "trigger": "Pasive",
         "meta": [
             {
-                "key": null,
+                "key": "note",
                 "value": "The Opportunist passive has been added back in."
             },
             {
-                "key": null,
+                "key": "note",
                 "value": "Increases Sombra's weapon damage versus hacked targets by 20%."
             },
             {
-                "key": null,
+                "key": "note",
                 "value": "See critically injured enemies through walls"
             }
         ],

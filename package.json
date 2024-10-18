@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --profile dev",
-    "build": "rmdir /S /Q docs & vite build && copy /Y CNAME docs",
+    "build": "rmdir /S /Q docs & vite build && copy /Y CNAME docs && copy /Y docs/index.html docs/404.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
