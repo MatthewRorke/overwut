@@ -38,7 +38,7 @@ export default function CharacterSelector({onClose, onCharacterChange}) {
     onCharacterChange(name);
   }
   return (
-    <div className="flex items-center justify-center w-[768px] mx-auto z-10 fixed left-0 right-0 bottom-5">
+    <div className="flex items-center justify-center w-[768px] mx-auto z-10 fixed left-0 right-0 bottom-5 fade-in">
       <div className="bg-white opacity-10 fixed top-0 left-0 w-screen h-screen z-40" onClick={() => onClose()}>
         &nbsp;
       </div>

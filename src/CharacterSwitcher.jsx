@@ -1,4 +1,5 @@
 import { HeroImages } from "./assets/heroes";
+import CharacterSwitcherIcon from "./CharacterSwitcherIcon";
 
 export default function CharacterSwitcher({isSelected = false, characterList, onChangeCharacter}) {
   const shouldHide = !isSelected ? "hidden " : "";
@@ -13,18 +14,7 @@ export default function CharacterSwitcher({isSelected = false, characterList, on
               title={character}
               onClick={() => onChangeCharacter(character)}
             >
-              <div className="w-[250px] h-[250px] relative opacity-80">
-                {
-                      HeroImages[`${character}Icon`] ? 
-                      (
-                          HeroImages[`${character}Icon`]
-                      )
-                      :
-                      (
-                        <img src={HeroImages[character]}  width="100%" className="absolute top-0 left-0"/>
-                      )
-                }
-              </div>
+              <CharacterSwitcherIcon character={character} />
             </div>
           ))
         }

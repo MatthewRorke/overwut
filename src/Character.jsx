@@ -1,10 +1,33 @@
 import { useEffect, useState } from 'react';
 import { HeroImages } from './assets/heroes'
 
-export default function Character({character}) {
+export default function Character({character, children}) {
+  const [ backgroundModifier, setBackgroundModifier ] = useState(
+    !HeroImages[`${character.toLowerCase()}Bg`]
+      ?
+        {
+          'background-position': 'left',
+          'background-size': '25%',
+          'background-position': 'bottom left',
+          'background-attachment': 'fixed',
+        }
+      :
+        HeroImages[`${character.toLowerCase()}Bg`]
+  );
+
+  useEffect(() => {
+    if(!HeroImages[`${character.toLowerCase()}Bg`]) {
+      return;
+    }
+    setBackgroundModifier(HeroImages[`${character.toLowerCase()}Bg`])
+  }, [character])
+
   return (
-    <div className="fixed top-0 left-0 z-0">
-      <img src={HeroImages[character.toLowerCase()]} />
-    </div>
+      <div
+        className="bg-no-repeat"
+        style={{'background-image': `url('${HeroImages[character.toLowerCase()]}')`, ...backgroundModifier}}
+      >
+        {children}
+      </div>
   );
 }

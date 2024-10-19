@@ -65,7 +65,17 @@ export const HeroImages = {
            <img src={`${Ashe}`} />
         </div>
     ),
+    asheBg: {
+        'background-size': '33%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     baptiste: Baptiste,
+    baptisteBg: {
+        'background-size': '15%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     baptisteIcon: (
         <div className="flex justify-center items-center pt-16">
             <img src={Baptiste}  width="100%" className="w-[150px]"/>
@@ -83,6 +93,11 @@ export const HeroImages = {
            <img src={`${Brigitte}`} />
         </div>
     ),
+    brigitteBg: {
+        'background-size': '15%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     cassidy: Cassidy,
     cassidyIcon: (
         <div className={`w-[200px] m-auto mt-20 mr-1`} title="test">
@@ -107,7 +122,17 @@ export const HeroImages = {
            <img src={`${Echo}`} />
         </div>
     ),
+    echoBg: {
+        'background-size': '18%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     genji: Genji,
+    genjiBg: {
+        'background-size': '10%',
+        'background-attachment': 'fixed',
+        'background-position': '10em bottom'
+    },
     genjiIcon: (
         <div className={`w-[150px] m-auto mt-24`} title="test">
            <img src={`${Genji}`} />
@@ -125,7 +150,17 @@ export const HeroImages = {
            <img src={`${Junker_Queen}`} />
         </div>
     ),
+    'junker queenBg': {
+        'background-size': '15%',
+        'background-attachment': 'fixed',
+        'background-position': '5em bottom'
+    },
     junkrat: Junkrat,
+    junkratBg: {
+        'background-size': '33%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     kiriko: Kiriko,
     kirikoIcon: (
         <div className={`w-[275px] m-auto mt-20 pl-8`} title="test">
@@ -145,7 +180,17 @@ export const HeroImages = {
         </div>
     ),
     mauga: Mauga,
+    maugaBg: {
+        'background-size': '50%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     mei: Mei,
+    meiBg: {
+        'background-size': '15%',
+        'background-attachment': 'fixed',
+        'background-position': '2em bottom'
+    },
     meiIcon: (
         <div className={`w-[150px] m-auto mt-24`} title="test">
            <img src={`${Mei}`} />
@@ -165,12 +210,22 @@ export const HeroImages = {
     ),
     orisa: Orisa,
     pharah: Pharah,
+    pharahBg: {
+        'background-size': '25%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     pharahIcon: (
         <div className={`w-[200px] m-auto mt-24 mr-1`}>
            <img src={`${Pharah}`} />
         </div>
     ),
     ramattra: Ramattra,
+    ramattraBg: {
+        'background-size': '25%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     ramattraIcon: (
         <div className={`w-[200px] m-auto mt-16`}>
            <img src={`${Ramattra}`} />
@@ -191,12 +246,22 @@ export const HeroImages = {
     roadhog: Roadhog,
     sigma: Sigma,
     sojourn: Sojourn,
+    sojournBg: {
+        'background-size': '15%',
+        'background-attachment': 'fixed',
+        'background-position': '2em bottom'
+    },
     sojournIcon: (
         <div className={`w-[140px] m-auto mt-24 pl-4`}>
            <img src={`${Sojourn}`} />
         </div>
     ),
     'soldier: 76': Soldier76,
+    'soldier: 76Bg': {
+        'background-size': '25%',
+        'background-attachment': 'fixed',
+        'background-position': 'left bottom'
+    },
     sombra: Sombra,
     sombraIcon: (
         <div className={`w-[180px] m-auto mt-24 pl-8`}>
@@ -204,6 +269,11 @@ export const HeroImages = {
         </div>
     ),
     symmetra: Symmetra,
+    symmetraBg: {
+        'background-size': '15%',
+        'background-attachment': 'fixed',
+        'background-position': '2em bottom'
+    },
     symmetraIcon: (
         <div className={`w-[100px] m-auto mt-24`}>
            <img src={`${Symmetra}`} />
@@ -215,13 +285,28 @@ export const HeroImages = {
            <img src={`${Torbjorn}`} />
         </div>
     ),
+    torbjornBg: {
+        'background-size': '25%',
+        'background-attachment': 'fixed',
+        'background-position': '2em bottom'
+    },
     tracer: Tracer,
+    tracerBg: {
+        'background-size': '10%',
+        'background-attachment': 'fixed',
+        'background-position': '5em bottom'
+    },
     tracerIcon: (
         <div className={`w-[100px] m-auto mt-24`}>
            <img src={`${Tracer}`} />
         </div>
     ),
     venture: Venture,
+    ventureBg: {
+        'background-size': '25%',
+        'background-attachment': 'fixed',
+        'background-position': '2em bottom'
+    },
     widowmaker: Widowmaker,
     widowmakerIcon: (
         <div className={`w-[225px] m-auto mt-24 pl-8`}>
@@ -237,6 +322,11 @@ export const HeroImages = {
     'wrecking ball': WreckingBall,
     zarya: Zarya,
     zenyatta: Zenyatta,
+    zenyattaBg: {
+        'background-size': '25%',
+        'background-attachment': 'fixed',
+        'background-position': '2em bottom'
+    },
     zenyattaIcon: (
         <div className={`w-[225px] m-auto mt-16 ml-1`}>
            <img src={`${Zenyatta}`} />

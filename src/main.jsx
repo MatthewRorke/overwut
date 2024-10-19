@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-          <Routes>
+        <Routes>
             <Route exact path="/" element={<App />} />
             <Route exact path="/:hero" element={<App />} />
             <Route path="/:selectedCharacterName/patch/:year/:month/:day" element={<App />} />
