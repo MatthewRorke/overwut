@@ -6,7 +6,6 @@ export default function Character({character, children}) {
     !HeroImages[`${character.toLowerCase()}Bg`]
       ?
         {
-          'background-position': 'left',
           'background-size': '25%',
           'background-position': 'bottom left',
           'background-attachment': 'fixed',
