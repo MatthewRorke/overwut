@@ -28,7 +28,6 @@ foreach($patches_in as $patch) {
 
 $url = "https://overwut.com";
 $lines = [];
-foreach($patches as $patch) {
     foreach($heroes as $hero) {
         $entry = [];
         $page = [
@@ -37,12 +36,11 @@ foreach($patches as $patch) {
             urlencode($patch[3])
         ];
         $entry[] = "<url>";
-        $entry[] = "<loc>".$url."/".urlencode($hero)."/patch/".implode("/", $page)."</loc>";
+        $entry[] = "<loc>".$url."/".urlencode($hero)."</loc>";
         $entry[] = "<lastmod>".date("Y-m-d")."</lastmod>";
         $entry[] = "</url>";
         $lines[] = implode(PHP_EOL, $entry);
     }
-}
 $raw_result = implode(PHP_EOL . PHP_EOL, $lines);
 //var_dump($raw_result);
 $sitemap_raw = file_get_contents("sitemap.xml");

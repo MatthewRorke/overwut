@@ -1,0 +1,44 @@
+{
+    "characters": [
+        {
+            "name": "Tracer",
+            "description": "An agile and time-bending adventurer, Tracer darts around the battlefield, causing chaos with her quick-fire pistols and temporal abilities."
+        },
+        {
+            "name": "Winston",
+            "description": "A brilliant scientist and genetically engineered gorilla, Winston uses his advanced technology and primal strength to protect the world as a noble hero."
+        },
+        {
+            "name": "Mercy",
+            "description": "A skilled healer with a heart of compassion, Mercy uses her Caduceus Staff to revive and heal allies, ensuring they stay in the fight."
+        },
+        {
+            "name": "Reinhardt",
+            "description": "A valiant, knightly warrior clad in powered armor, Reinhardt wields a massive hammer and defends his team with an energy shield."
+        },
+        {
+            "name": "Widowmaker",
+            "description": "A lethal assassin with pinpoint precision, Widowmaker stalks her enemies from afar, taking them down with deadly sniper shots."
+        },
+        {
+            "name": "Genji",
+            "description": "A cybernetic ninja with mastery over both blade and stealth, Genji blends agility with powerful sword strikes to defeat his foes."
+        },
+        {
+            "name": "D.Va",
+            "description": "A former pro-gamer turned mech pilot, D.Va uses her powerful exosuit to protect her team with heavy firepower and a defensive matrix."
+        },
+        {
+            "name": "Bastion",
+            "description": "A reconfigured combat robot, Bastion shifts between mobile assault and stationary defense modes, unleashing devastating firepower."
+        },
+        {
+            "name": "Zenyatta",
+            "description": "A peace-seeking omnic monk, Zenyatta brings harmony and tranquility to the battlefield while unleashing destructive energy orbs."
+        },
+        {
+            "name": "Ana",
+            "description": "A veteran sniper and battle-hardened healer, Ana supports her team from a distance, using her biotic rifle to both heal allies and damage foes."
+        }
+    ]
+}

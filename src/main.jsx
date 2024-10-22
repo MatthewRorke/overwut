@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<App />} />
-            <Route exact path="/:hero" element={<App />} />
+            <Route exact path="/:selectedCharacterName" element={<App />} />
             <Route path="/:selectedCharacterName/patch/:year/:month/:day" element={<App />} />
         </Routes>
       </BrowserRouter>

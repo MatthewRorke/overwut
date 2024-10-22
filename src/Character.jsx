@@ -5,11 +5,7 @@ export default function Character({character, children}) {
   const [ backgroundModifier, setBackgroundModifier ] = useState(
     !HeroImages[`${character.toLowerCase()}Bg`]
       ?
-        {
-          'background-size': '25%',
-          'background-position': 'bottom left',
-          'background-attachment': 'fixed',
-        }
+        {}
       :
         HeroImages[`${character.toLowerCase()}Bg`]
   );
@@ -23,10 +19,8 @@ export default function Character({character, children}) {
 
   return (
       <div
-        className="bg-no-repeat"
-        style={{'background-image': `url('${HeroImages[character.toLowerCase()]}')`, ...backgroundModifier}}
       >
-        {children}
+        <img src={HeroImages[character.toLowerCase()]} {...backgroundModifier}/>
       </div>
   );
 }
