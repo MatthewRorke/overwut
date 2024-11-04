@@ -19,7 +19,7 @@ import SkillIndex from './SkillIndex';
 import characterDescs from './assets/characterDesc.json';
 
 export default function() {
-  const {year = '2024', month = '10', day = '15', selectedCharacterName = 'juno'} = useParams();
+  const {year = '2024', month = '10', day = '29', selectedCharacterName = 'juno'} = useParams();
   const selectedPatch = useSelector(state => state.user.selectedPatch);
   const characterList = useSelector(state => state.user.characterList)
   const selectedCharacter = useSelector(state => state.user.selectedCharacter);
