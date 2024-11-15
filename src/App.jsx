@@ -42,7 +42,6 @@ export default function() {
 
   useEffect(() => {
     if(selectedCharacterName != selectedCharacter) {
-      console.log('change accepted');
       document.title = `${(selectedCharacterName.toUpperCase())[0] + selectedCharacterName.slice(1)} | Overwatch Patch ${year}-${month}-${day}`;
       const descMeta = document.querySelector("meta[name='description']");
       descMeta.setAttribute("content",  `View all the abilities and stats for ${selectedCharacterName} across Overwatch Patches`);
