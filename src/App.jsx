@@ -1,25 +1,27 @@
-import { useEffect, useReducer, useState } from 'react'
-import Database from './out';
+import { useEffect, useState } from 'react'
 import Character from './Character';
-import CharacterSwitcher from './CharacterSwitcher';
-import Tag from './Tag';
-import HealthTicker from './HealthTicker';
-import Role from './Role';
-import Skill from './Skill';
 import PatchSelector from './PatchSelector';
-import { RoleImage } from './assets/role';
 import { useNavigate, useParams } from 'react-router-dom';
-import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
+import { FaArrowDown } from 'react-icons/fa';
 import CharacterSelector from './CharacterSelector';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedCharacter, setSelectedPatch } from './Store/userSlice';
 import SkillList from './SkillList';
 import TopBar from './TopBar';
 import SkillIndex from './SkillIndex';
-import characterDescs from './assets/characterDesc.json';
+import Database from './out';
 
 export default function() {
-  const {year = '2024', month = '10', day = '29', selectedCharacterName = 'juno'} = useParams();
+  const databaseDefaultDate = Object.keys(Database)[
+      Object.keys(Database).length - 1
+  ];
+
+  const {
+    year = databaseDefaultDate.substring(0, 4),
+    month = databaseDefaultDate.substring(4, 6),
+    day = databaseDefaultDate.substring(6, 8),
+    selectedCharacterName = 'juno'
+  } = useParams();
   const selectedPatch = useSelector(state => state.user.selectedPatch);
   const characterList = useSelector(state => state.user.characterList)
   const selectedCharacter = useSelector(state => state.user.selectedCharacter);

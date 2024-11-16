@@ -217,7 +217,7 @@
         "meta": [
             {
                 "key": "healing",
-                "value": "100 per second"
+                "value": "85 per second"
             },
             {
                 "key": "dmg. amplification",
@@ -260,7 +260,7 @@
         "meta": [
             {
                 "key": "damage",
-                "value": "70 over 0.59 seconds"
+                "value": "75 over 0.59 seconds"
             },
             {
                 "key": "headshot",
@@ -268,7 +268,7 @@
             },
             {
                 "key": "healing",
-                "value": "70 over 0.59 seconds"
+                "value": "75 over 0.59 seconds"
             },
             {
                 "key": "rate of fire",
@@ -1245,6 +1245,10 @@
             {
                 "key": "healing",
                 "value": "250% of wound damage dealt"
+            },
+            {
+                "key": "notes",
+                "value": "Wound damage self-healing multiplier reduced from 2.5 to 2.25x"
             }
         ],
         "resistances": [
@@ -1359,6 +1363,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.35 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Base projectile size reduced from 0.2 to 0.15 meters"
             }
         ],
         "resistances": [
@@ -2517,6 +2525,10 @@
             {
                 "key": "knockback speed",
                 "value": "15 - 35 m\/s"
+            },
+            {
+                "key": "notes",
+                "value": "Angle required for wall slam increased from 44 to 55 degrees"
             }
         ],
         "resistances": [
@@ -2551,7 +2563,7 @@
             },
             {
                 "key": "healing",
-                "value": "75 per second (while targeting)"
+                "value": "90 per second (while targeting)"
             },
             {
                 "key": "cast time",
@@ -3166,6 +3178,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.1 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Time to fully charge decreased from 0.87 to 0.80 seconds"
             }
         ],
         "resistances": [
@@ -3330,6 +3346,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.175 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Now damages enemy buildable objects"
             }
         ],
         "resistances": [
@@ -3758,6 +3778,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.2 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown increased from 7 to 8 seconds"
             }
         ],
         "resistances": [
@@ -4001,6 +4025,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.225 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Recovery time decreased from 0.55 to 0.5 seconds"
             }
         ],
         "resistances": [
@@ -4024,6 +4052,10 @@
             {
                 "key": "max. range",
                 "value": "35 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown reduced from 8 to 7 seconds"
             }
         ],
         "resistances": [
@@ -4063,6 +4095,10 @@
             {
                 "key": "projectile radius",
                 "value": "0.2 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown reduced from 15 to 14 seconds"
             }
         ],
         "resistances": [
@@ -4300,11 +4336,15 @@
         "meta": [
             {
                 "key": "healing",
-                "value": "50 (ally)"
+                "value": "75 (ally)"
             },
             {
                 "key": "max. range",
                 "value": "30 meters"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown reduced from 19 to 18 seconds"
             }
         ],
         "resistances": [
@@ -4352,6 +4392,10 @@
             {
                 "key": "area of effect",
                 "value": "12 meters radius"
+            },
+            {
+                "key": "notes",
+                "value": "Time before Overhealth begins to drain when out of range increased from 2.5 to 6 seconds"
             }
         ],
         "resistances": [
@@ -4652,10 +4696,6 @@
             {
                 "key": "projectile radius",
                 "value": "0.05 meters"
-            },
-            {
-                "key": "notes",
-                "value": "Ignite damage over time duration increased from 3 to 4 seconds"
             }
         ],
         "resistances": [
@@ -4798,6 +4838,14 @@
             {
                 "key": "knockback speed",
                 "value": "6.9 m\/s (knockdown)"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown reduced from 6 to 5 seconds"
+            },
+            {
+                "key": "notes",
+                "value": "Charge movement speed increased 15%"
             }
         ],
         "resistances": [
@@ -5723,6 +5771,10 @@
             {
                 "key": "projectile radius",
                 "value": "None"
+            },
+            {
+                "key": "notes",
+                "value": "Self-healing increased from 24 to 30 health per second"
             }
         ],
         "resistances": [
@@ -6012,6 +6064,10 @@
             {
                 "key": "m. speed penalty",
                 "value": "-10%"
+            },
+            {
+                "key": "notes",
+                "value": "No longer reduces Fusion Driver heat generation"
             }
         ],
         "resistances": [
@@ -6542,16 +6598,12 @@
                 "value": "0.575 meters"
             },
             {
-                "key": "damage to barriers",
-                "value": "2.5x"
+                "key": "notes",
+                "value": "Reverted to pierce barriers again"
             },
             {
                 "key": "notes",
-                "value": "No longer pierces barriers"
-            },
-            {
-                "key": "notes",
-                "value": ""
+                "value": "No longer deals critical damage to barriers"
             }
         ],
         "resistances": [
@@ -6699,7 +6751,7 @@
         "meta": [
             {
                 "key": "healing",
-                "value": "35% of damage dealt"
+                "value": "30% of damage dealt"
             }
         ],
         "resistances": [
@@ -7950,44 +8002,44 @@
         "trigger": "Weapon (Secondary Fire)",
         "meta": [
             {
-                "key": "cast time",
-                "value": "0.65 + 0.4 seconds"
+                "key": "damage",
+                "value": "65"
             },
             {
-                "key": "duration",
-                "value": "8 seconds (reveal, heroes)"
+                "key": "headshot",
+                "value": "\u2715"
             },
             {
-                "key": "duration",
-                "value": "1.5 seconds (ability disable, heroes)"
+                "key": "rate of fire",
+                "value": "1.67 shots\/s"
             },
             {
-                "key": "duration",
-                "value": "45 seconds (health packs)"
-            },
-            {
-                "key": "duration",
-                "value": "10 seconds (disable, objects)"
+                "key": "ammo",
+                "value": "\u221e"
             },
             {
                 "key": "max. range",
-                "value": "15 meters"
+                "value": "10.5 meters"
             },
             {
-                "key": "cast time",
-                "value": "0.65 + 0.4 seconds"
+                "key": "projectile speed",
+                "value": "105 m\/s"
             },
             {
-                "key": "hacked ability lockout effect duration",
-                "value": "1.0"
-            },
-            {
-                "key": "notes",
-                "value": "No longer ends Stealth but does reveal Sombra"
+                "key": "projectile radius",
+                "value": "0.575 meters"
             },
             {
                 "key": "notes",
-                "value": "BOB hacked stun duration reduced from 10 to 3 seconds"
+                "value": "Reverted to pierce barriers again"
+            },
+            {
+                "key": "notes",
+                "value": "No longer deals critical damage to barriers"
+            },
+            {
+                "key": "notes",
+                "value": "Now exits stealth when hacking an enemy target"
             }
         ],
         "resistances": [
@@ -8074,6 +8126,14 @@
             {
                 "key": "notes",
                 "value": "Cooldown increased from 5 to 7 seconds"
+            },
+            {
+                "key": "notes",
+                "value": "Delay before entering stealth reduced from 0.5 to 0.33 seconds"
+            },
+            {
+                "key": "notes",
+                "value": "Fade in time reduced from 0.3 to 0.15 second"
             }
         ],
         "resistances": [
@@ -8124,7 +8184,7 @@
             },
             {
                 "key": "notes",
-                "value": "Ultimate cost increased 12%"
+                "value": "Ultimate cost reduced by 10%"
             }
         ],
         "resistances": [
@@ -8783,6 +8843,10 @@
             {
                 "key": "duration",
                 "value": "Rewinds 3 seconds back"
+            },
+            {
+                "key": "notes",
+                "value": "Cooldown reduced from 13 to 12 seconds"
             }
         ],
         "resistances": [
@@ -9664,7 +9728,7 @@
             },
             {
                 "key": "ammo",
-                "value": "80"
+                "value": "100"
             },
             {
                 "key": "reload time",
@@ -9703,7 +9767,7 @@
             },
             {
                 "key": "duration",
-                "value": "6 seconds (max. grapple time)"
+                "value": "8 seconds (max. grapple time)"
             },
             {
                 "key": "duration",

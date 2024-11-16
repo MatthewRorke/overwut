@@ -1,19 +1,47 @@
 <?php
+if(!$argv[1]) {
+    echo "Usage: php parseCSV.php <date>\n";
+    exit(1);
+}
+
 require('vendor/autoload.php');
 use Aspera\Spreadsheet\XLSX\Reader;
 
 DEFINE('true_line_break', "\r\n"); // PHP_EOL allows for both \r and \r\n which messes with in-column linebreaks
 
 function generateJson($data, $filename) {
+    global $argv;
     $json = json_encode($data, JSON_PRETTY_PRINT);
-    file_put_contents('./src/out/'.$filename, $json);
+    file_put_contents('./src/out/'.$argv[1].'/'.$filename, $json);
 }
 
 $reader = new Reader();
 $reader->open('in/OW.xlsx');
 
-function generateResistancesJson($reader) {
-    $reader->changeSheet(2);
+$selectedSheetIndexes = [
+    'resistance' => null,
+    'skills' => null,
+    'characters' => null
+];
+
+foreach($reader->getSheets() as $index=>$sheet) {
+    if(!strpos($sheet->getName(), $argv[1])) {
+        continue;
+    }
+    $sheet_name = $sheet->getName();
+    if(strpos($sheet_name, 'Resistances') !== false) {
+        $selectedSheetIndexes['resistance'] = $index;
+    }
+    if(strpos($sheet_name, 'Skills') !== false) {
+        $selectedSheetIndexes['skills'] = $index;
+    }
+    if(strpos($sheet_name, 'Character') !== false) {
+        $selectedSheetIndexes['characters'] = $index;
+    }
+}
+
+function generateResistancesJson($reader, $index) {
+    $reader->changeSheet($index);
     foreach ($reader as $row) {
         if(strtolower($row[0]) == "name") continue;
         list($name) = $row;
@@ -23,13 +51,12 @@ function generateResistancesJson($reader) {
     }
     generateJson($ret, 'resistance.json');
 }
-generateResistancesJson($reader);
+generateResistancesJson($reader, $selectedSheetIndexes['resistance']);
 
-function generateSkillJson($reader) {
-    $reader->changeSheet(1);
+function generateSkillJson($reader, $index) {
+    $reader->changeSheet($index);
     foreach ($reader as $row) {
         if(count($row) < 2) continue;
-        //print_r($row);
 
         @list($name, $type, $trigger, $meta, $resistance_1, $resistance_2, $resistance_3, $resistance_4, $resistance_5, $resistance_6) = $row;
 
@@ -70,10 +97,10 @@ function generateSkillJson($reader) {
     
     generateJson($ret, 'skill.json');
 }
-generateSkillJson($reader);
+generateSkillJson($reader, $selectedSheetIndexes['skills']);
 
-function generateCharactersJson($reader) {
-    $reader->changeSheet(0);
+function generateCharactersJson($reader, $index) {
+    $reader->changeSheet($index);
     foreach ($reader as $row) {
         @list($name, $role, $health, $shield, $special_health, $overhealth, $armor, $image, $skill_1, $skill_2, $skill_3, $skill_4, $skill_5, $skill_6, $skill_7, $skill_8) = $row;
         echo trim($name) . PHP_EOL;
@@ -104,7 +131,7 @@ function generateCharactersJson($reader) {
 
     $reader->close();
 }
-generateCharactersJson($reader);
+generateCharactersJson($reader, $selectedSheetIndexes['characters']);
 
 function fixString($string) {
     if(is_null($string)) {

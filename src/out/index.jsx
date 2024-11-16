@@ -6,9 +6,17 @@ import Character20241015 from './20241015/character.json';
 import Resistance20241015 from './20241015/resistance.json';
 import Skill20241015 from './20241015/skill.json';
 
+import Character20241021 from './20241021/character.json';
+import Resistance20241021 from './20241021/resistance.json';
+import Skill20241021 from './20241021/skill.json';
+
 import Character20241029 from './20241029/character.json';
 import Resistance20241029 from './20241029/resistance.json';
 import Skill20241029 from './20241029/skill.json';
+
+import Character20241112 from './20241112/character.json';
+import Resistance20241112 from './20241112/resistance.json';
+import Skill20241112 from './20241112/skill.json';
 
 export default {
     // 'default': {
@@ -16,19 +24,29 @@ export default {
     //     Resistance: Resistance20241015,
     //     Skill: Skill20241015,
     // },
-    '20241015': {
-        Character: Character20241015,
-        Resistance: Resistance20241015,
-        Skill: Skill20241015,
-    },
     '20241001': {
         Character: Character20241001,
         Resistance: Resistance20241001,
         Skill: Skill20241001,
     },
+    '20241015': {
+        Character: Character20241015,
+        Resistance: Resistance20241015,
+        Skill: Skill20241015,
+    },
+    '20241021': {
+        Character: Character20241021,
+        Resistance: Resistance20241021,
+        Skill: Skill20241021,
+    },
     '20241029': {
         Character: Character20241029,
         Resistance: Resistance20241029,
         Skill: Skill20241029,
-    }
+    },
+    '20241112': {
+        Character: Character20241112,
+        Resistance: Resistance20241112,
+        Skill: Skill20241112,
+    },
 };

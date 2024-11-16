@@ -4652,10 +4652,6 @@
             {
                 "key": "projectile radius",
                 "value": "0.05 meters"
-            },
-            {
-                "key": "notes",
-                "value": "Ignite damage over time duration increased from 3 to 4 seconds"
             }
         ],
         "resistances": [
@@ -6544,14 +6540,6 @@
             {
                 "key": "damage to barriers",
                 "value": "2.5x"
-            },
-            {
-                "key": "notes",
-                "value": "No longer pierces barriers"
-            },
-            {
-                "key": "notes",
-                "value": ""
             }
         ],
         "resistances": [
@@ -8073,7 +8061,7 @@
             },
             {
                 "key": "notes",
-                "value": "Cooldown increased from 5 to 7 seconds"
+                "value": "Cooldown reduced from 7 to 6 seconds"
             }
         ],
         "resistances": [

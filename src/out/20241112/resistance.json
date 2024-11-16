@@ -1,0 +1,47 @@
+[
+    {
+        "name": "blocked by barriers"
+    },
+    {
+        "name": "blocked by defense matrix\/kinetic grasp"
+    },
+    {
+        "name": "blocked by deflect\/javelin spin"
+    },
+    {
+        "name": "affected by damage boosts"
+    },
+    {
+        "name": "affected by amplification matrix"
+    },
+    {
+        "name": "partially blocked by barriers"
+    },
+    {
+        "name": "partially blocked by defense matrix\/kinetic grasp"
+    },
+    {
+        "name": "partially blocked by deflect\/javelin spin"
+    },
+    {
+        "name": "partially affect by damage boosts"
+    },
+    {
+        "name": "partially affected by amplification matrix"
+    },
+    {
+        "name": "ignores barriers"
+    },
+    {
+        "name": "ignores defense matrix\/kinetic grasp"
+    },
+    {
+        "name": "ignores deflect\/javelin spin"
+    },
+    {
+        "name": "ignores damage boosts"
+    },
+    {
+        "name": "ignores amplification matrix"
+    }
+]

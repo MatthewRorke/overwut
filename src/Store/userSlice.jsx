@@ -1,9 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 import Database from '../out';
 
-const defaultPatch = '20241015';
-const defaultChar = 'ana';
-const defaultRole = 'tank';
+const databaseDefaultDate = Object.keys(Database)[
+    Object.keys(Database).length - 1
+];
+
+const defaultPatch = databaseDefaultDate;
+const defaultChar = 'juno';
+const defaultRole = 'support';
 
 const initialState = {
     selectedPatch: defaultPatch,
