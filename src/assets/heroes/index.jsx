@@ -39,8 +39,15 @@ import Winston from './winston.webp'
 import WreckingBall from './wrecking_ball.webp'
 import Zarya from './zarya.webp'
 import Zenyatta from './zenyatta.webp'
+import Hazard from './hazard.webp'
 
 export const HeroImages = {
+    hazard: Hazard,
+    hazardIcon: (
+        <div className={`w-[200px] m-auto mt-24`}>
+            <img src={`${Hazard}`} />
+        </div>
+    ),
     juno: Juno,
     junoIcon: (
         <div className={`w-[200px] m-auto mt-16`} title="test">

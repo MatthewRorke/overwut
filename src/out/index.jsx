@@ -18,6 +18,14 @@ import Character20241112 from './20241112/character.json';
 import Resistance20241112 from './20241112/resistance.json';
 import Skill20241112 from './20241112/skill.json';
 
+import Character20241210 from './20241210/character.json';
+import Resistance20241210 from './20241210/resistance.json';
+import Skill20241210 from './20241210/skill.json';
+
+import Character20241216 from './20241216/character.json';
+import Resistance20241216 from './20241216/resistance.json';
+import Skill20241216 from './20241216/skill.json';
+
 export default {
     // 'default': {
     //     Character: Character20241015,
@@ -48,5 +56,15 @@ export default {
         Character: Character20241112,
         Resistance: Resistance20241112,
         Skill: Skill20241112,
+    },
+    '20241210': {
+        Character: Character20241210,
+        Resistance: Resistance20241210,
+        Skill: Skill20241210,
+    },
+    '20241216': {
+        Character: Character20241216,
+        Resistance: Resistance20241216,
+        Skill: Skill20241216,
     },
 };
